@@ -1,0 +1,18 @@
+:root {
+  --menuBurger: #e8e8e8;
+  --textColorMenu: #818181;
+
+  /*Contrôle des couleurs text et background-color du site*/
+  --TextColorButtonRoot: black;
+  --TextColorRoot: white;
+  --BackgroudColorRoot: black;
+  --BackgroudButtonRoot: white;
+
+  /*Button MenuBurger avec id openBtn dans fichier NavMobile.tsx*/
+  --ButtonMenuBerger: white;
+  --BackgroundColorButtonMenuBurger: var(--BackgroudColorRoot);
+}
+
+body {
+  background-color: var(--BackgroudColorRoot);
+}
