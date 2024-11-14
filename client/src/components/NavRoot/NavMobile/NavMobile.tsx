@@ -56,9 +56,3 @@ function NavMobile() {
 }
 
 export default NavMobile;
-
-/*
-<ContainerNav/>
-<h1>GenkiAnime</h1>
-<SideNav/>
-*/
