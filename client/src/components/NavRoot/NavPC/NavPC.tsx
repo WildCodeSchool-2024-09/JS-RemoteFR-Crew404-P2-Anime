@@ -1,0 +1,43 @@
+import "./NavPC.css";
+import Drapeau from "../DrapeauRoot";
+import styles from "../DrapeauRoot.module.css";
+import Search from "../Search";
+
+function NavPC() {
+  return (
+    <div className="nav-desktop">
+      <div className="ContainerPC-1">
+        <div className="Logo">
+          <img src="./data-img/GenkiAnimeLogo.webp" alt="Logo" />
+        </div>
+
+        <div className="MenuPC Recommendation">
+          <a href="!#">Recommendation</a>
+        </div>
+        <div className="MenuPC">
+          <a href="!#">Genre</a>
+        </div>
+        <div className="MenuPC">
+          <a href="!#">Année</a>
+        </div>
+
+        <div className="Container-Search-PC">
+          <Search />
+        </div>
+
+        <Drapeau
+          moduleContainerDrapeau={styles.ContainerDrapeauPC}
+          moduleLanguageFR={styles.LanguageFRPC}
+          moduleLanguageEN={styles.LanguageENPC}
+          moduleImgDrapeau={styles.ImgDrapeauPC}
+        />
+      </div>
+
+      <div className="ContainerPC-2">
+        <h2 className={styles.Sacha}>Bienvenue chez GenkiAnime</h2>
+      </div>
+    </div>
+  );
+}
+
+export default NavPC;
