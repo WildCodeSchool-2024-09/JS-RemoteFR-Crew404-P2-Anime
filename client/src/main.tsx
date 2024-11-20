@@ -7,6 +7,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 // Import the main app component
 import App from "./App";
+import Genre from "./pages/Genre";
 import Home from "./pages/Home";
 
 // Import additional components for new routes
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/home",
         element: <Home />,
+      },
+      {
+        path: "/genre",
+        element: <Genre />,
       },
     ],
   },

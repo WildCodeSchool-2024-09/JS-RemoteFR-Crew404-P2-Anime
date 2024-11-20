@@ -1,7 +1,7 @@
-import HomeMainRoot from "../components/HomeMainRoot/HomeMainRoot";
+import GenreMainRoot from "../components/GenreMainRoot/GenreMainRoot";
 import NavRoot from "../components/NavRoot/NavRoot";
 
-function Home() {
+function Genre() {
   return (
     <>
       <header>
@@ -9,10 +9,10 @@ function Home() {
       </header>
 
       <main>
-        <HomeMainRoot />
+        <GenreMainRoot />
       </main>
     </>
   );
 }
 
-export default Home;
+export default Genre;

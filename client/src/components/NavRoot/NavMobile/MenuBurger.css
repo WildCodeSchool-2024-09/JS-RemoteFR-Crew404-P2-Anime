@@ -16,3 +16,8 @@
   text-decoration: none;
   color: var(--TextColorButtonRoot);
 }
+
+.menu > li > Link {
+  text-decoration: none;
+  color: var(--TextColorButtonRoot);
+}

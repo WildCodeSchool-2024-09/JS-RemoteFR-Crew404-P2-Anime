@@ -1,5 +1,6 @@
 import "./NavMobile.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Drapeau from "../DrapeauRoot";
 import styles from "../DrapeauRoot.module.css";
 import Search from "../Search";
@@ -15,7 +16,13 @@ function NavMobile() {
     <div className="nav-mobile">
       <section className="NavBarre">
         <div>
-          <img src="./data-img/GenkiAnimeLogo.webp" alt="#" className="Logo" />
+          <Link to="/home">
+            <img
+              src="./data-img/GenkiAnimeLogo.webp"
+              alt="#"
+              className="Logo"
+            />
+          </Link>
         </div>
         <Search />
       </section>
