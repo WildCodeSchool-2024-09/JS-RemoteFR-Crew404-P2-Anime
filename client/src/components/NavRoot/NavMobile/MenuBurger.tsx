@@ -1,16 +1,17 @@
 import "./MenuBurger.css";
+import { Link } from "react-router-dom";
 
 function MenuBurger() {
   return (
     <ul className="menu">
       <li>
-        <a href="!#">Accueil</a>
+        <Link to="/home">Accueil</Link>
       </li>
       <li>
         <a href="!#">Recommendation</a>
       </li>
       <li>
-        <a href="!#">Genre</a>
+        <Link to="/genre">Genre</Link>
       </li>
       <li>
         <a href="!#">Année</a>

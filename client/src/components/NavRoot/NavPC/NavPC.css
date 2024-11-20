@@ -21,10 +21,18 @@
   justify-content: center;
   align-items: center;
   width: 100px;
+}
+
+.Logo > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
   margin-right: 10px;
 }
 
-.Logo > img {
+.Logo > a > img {
+  margin: 0rem 0rem 0rem 1rem;
   width: 100px;
   border-radius: 1rem;
 }
@@ -36,6 +44,14 @@
 }
 
 .MenuPC > a {
+  text-decoration: none;
+  color: var(--TextColorButtonRoot);
+  border-radius: 1rem;
+  padding: 5px;
+  background-color: var(--BackgroudButtonRoot);
+}
+
+.MenuPC > Link {
   text-decoration: none;
   color: var(--TextColorButtonRoot);
   border-radius: 1rem;

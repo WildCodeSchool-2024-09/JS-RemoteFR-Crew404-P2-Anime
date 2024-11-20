@@ -1,0 +1,59 @@
+@import "../../../Root.css";
+
+.GenreMainMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.DescriptionGenre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.DescriptionGenre > h3 {
+  color: var(--TextColorRoot);
+  text-align: center;
+}
+
+.CardGenreMobile {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 290px) and (max-width: 430px) {
+  .CardGenreMobile {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 430px) and (max-width: 570px) {
+  .CardGenreMobile {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 570px) and (max-width: 710px) {
+  .CardGenreMobile {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 710px) {
+  .CardGenreMobile {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+.CardGenreMobile > a {
+  border-radius: 1rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--BackgroudButtonRoot);
+  color: var(--TextColorButtonRoot);
+  padding: 0.5rem;
+}

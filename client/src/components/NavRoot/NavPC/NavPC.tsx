@@ -1,4 +1,5 @@
 import "./NavPC.css";
+import { Link } from "react-router-dom";
 import Drapeau from "../DrapeauRoot";
 import styles from "../DrapeauRoot.module.css";
 import Search from "../Search";
@@ -8,14 +9,16 @@ function NavPC() {
     <div className="nav-desktop">
       <div className="ContainerPC-1">
         <div className="Logo">
-          <img src="./data-img/GenkiAnimeLogo.webp" alt="Logo" />
+          <Link to="/home">
+            <img src="./data-img/GenkiAnimeLogo.webp" alt="Logo" />
+          </Link>
         </div>
 
         <div className="MenuPC Recommendation">
           <a href="!#">Recommendation</a>
         </div>
         <div className="MenuPC">
-          <a href="!#">Genre</a>
+          <Link to="/genre">Genre</Link>
         </div>
         <div className="MenuPC">
           <a href="!#">Année</a>
