@@ -259,4 +259,33 @@ export const structureDataAnime = [
       },
     ],
   },
+
+  {
+    images: {
+      jpg: {
+        large_image_url:
+          "https://cdn.myanimelist.net/images/anime/4/84177l.jpg",
+      },
+    },
+
+    title: "L'Attaque des Titans",
+    mal_id: 28755,
+
+    aired: {
+      prop: {
+        from: {
+          year: "2013",
+        },
+        to: {
+          year: "2023",
+        },
+      },
+    },
+
+    genres: [
+      {
+        name: "Action",
+      },
+    ],
+  },
 ];
