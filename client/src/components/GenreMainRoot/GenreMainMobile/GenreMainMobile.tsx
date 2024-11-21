@@ -1,6 +1,6 @@
 import "./GenreMainMobile.css";
 import CardGenreRoot from "../ComponentsGenreMainRoot/CardGenreRoot";
-import style from "../ComponentsGenreMainRoot/CardGenreRoot.module.css"
+import style from "../ComponentsGenreMainRoot/CardGenreRoot.module.css";
 
 function GenreMainMobile() {
   return (
@@ -9,10 +9,7 @@ function GenreMainMobile() {
         <h3>Quel genre d'aventure animée vous attire aujourd'hui ?</h3>
       </div>
 
-      <CardGenreRoot 
-         moduleContainerCardGenreRoot={style.CardGenreMobile}
-      />
-      
+      <CardGenreRoot moduleContainerCardGenreRoot={style.CardGenreMobile} />
     </section>
   );
 }
