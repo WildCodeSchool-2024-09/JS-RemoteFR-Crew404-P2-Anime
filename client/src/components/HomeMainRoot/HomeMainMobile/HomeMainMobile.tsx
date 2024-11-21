@@ -19,13 +19,10 @@ function HomeMainMobile() {
       );
   };
 
-  const ButtonCardAnimeHomeMobile = () => {
-    DataAnimeMobileAPI();
-    DataAnimeMobileAPI();
-    DataAnimeMobileAPI();
-    DataAnimeMobileAPI();
-    DataAnimeMobileAPI();
-    DataAnimeMobileAPI();
+  const ButtonCardAnimeHomeMobile = (nombreAppels = 6) => {
+    for (let i = 0; i < nombreAppels; i++) {
+      DataAnimeMobileAPI();
+    }
   };
 
   return (
@@ -58,7 +55,9 @@ function HomeMainMobile() {
         <button
           className="ButtonCardAnimeHomeMobile"
           type="button"
-          onClick={ButtonCardAnimeHomeMobile}
+          onClick={() => {
+            ButtonCardAnimeHomeMobile();
+          }}
         >
           En voir plus
         </button>

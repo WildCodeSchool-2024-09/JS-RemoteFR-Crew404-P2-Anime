@@ -19,17 +19,10 @@ function HomeMainPC() {
       );
   };
 
-  const ButtonCardAnimeHomeMobile = () => {
-    DataAnimePCAPI();
-    DataAnimePCAPI();
-    DataAnimePCAPI();
-    DataAnimePCAPI();
-    DataAnimePCAPI();
-    DataAnimePCAPI();
-    DataAnimePCAPI();
-    DataAnimePCAPI();
-    DataAnimePCAPI();
-    DataAnimePCAPI();
+  const ButtonCardAnimeHomePC = (nombreAppels = 10) => {
+    for (let i = 0; i < nombreAppels; i++) {
+      DataAnimePCAPI();
+    }
   };
 
   return (
@@ -62,7 +55,9 @@ function HomeMainPC() {
         <button
           type="button"
           className="ButtonCardAnimeHomePC"
-          onClick={ButtonCardAnimeHomeMobile}
+          onClick={() => {
+            ButtonCardAnimeHomePC();
+          }}
         >
           En voir plus
         </button>
