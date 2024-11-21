@@ -13,9 +13,7 @@ function Genre() {
         <GenreMainRoot />
       </main>
 
-      <footer>
-        <FooterRoot />
-      </footer>
+      <FooterRoot />
     </>
   );
 }

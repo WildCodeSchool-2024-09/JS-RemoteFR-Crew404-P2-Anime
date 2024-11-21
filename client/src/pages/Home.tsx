@@ -13,9 +13,7 @@ function Home() {
         <HomeMainRoot />
       </main>
 
-      <footer>
-        <FooterRoot />
-      </footer>
+      <FooterRoot />
     </>
   );
 }
