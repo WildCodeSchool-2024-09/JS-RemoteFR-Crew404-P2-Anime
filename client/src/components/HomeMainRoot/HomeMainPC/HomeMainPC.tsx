@@ -1,14 +1,14 @@
-import "./HomeMainMobile.css";
+import "./HomeMainPC.css";
 import { useState } from "react";
 import { structureDataAnime } from "../../../datas/structureDataAnime";
 import CardAnimeHomeMainRoot from "../ComponentsHomeMainRoot/CardAnimeHomeMainRoot";
 import style from "../ComponentsHomeMainRoot/CardAnimeHomeMainRoot.module.css";
 import DescriptionHomeMainRoot from "../ComponentsHomeMainRoot/DescriptionHomeMainRoot";
 
-function HomeMainMobile() {
+function HomeMainPC() {
   const [dataAnime, setDataAnime] = useState(structureDataAnime);
 
-  const DataAnimeMobileAPI = () => {
+  const DataAnimePCAPI = () => {
     fetch("https://api.jikan.moe/v4/random/anime")
       .then((response) => response.json())
       .then((data) => {
@@ -19,18 +19,18 @@ function HomeMainMobile() {
       );
   };
 
-  const ButtonCardAnimeHomeMobile = (nombreAppels = 6) => {
+  const ButtonCardAnimeHomePC = (nombreAppels = 10) => {
     for (let i = 0; i < nombreAppels; i++) {
-      DataAnimeMobileAPI();
+      DataAnimePCAPI();
     }
   };
 
   return (
-    <div className="HomeMainMobile">
+    <div className="HomeMainPC">
       <DescriptionHomeMainRoot />
 
       {/* La classe de cette section est liée au module CardAnimeHomeMainRoot.module.css */}
-      <section className={style.ContainerRootCardAnimeHomeMobile}>
+      <section className={style.ContainerRootCardAnimeHomePC}>
         {dataAnime.map((anime) => (
           <CardAnimeHomeMainRoot
             key={anime?.mal_id}
@@ -41,22 +41,22 @@ function HomeMainMobile() {
             yearEnd={anime.aired?.prop?.to?.year || "En cours"}
             title={anime.title || "Sans titre"}
             // Données des classes liées au module CardAnimeHomeMainRoot.module.css
-            moduleContainerCardAnimeHome={style.ContainerCardAnimeHomeMobile}
-            moduleCardAnimeHomeImg={style.CardAnimeHomeImgMobile}
-            moduleContainerCardAnimeInfo={style.ContainerCardAnimeInfoMobile}
-            moduleTitleAnimeHome={style.TitleAnimeHomeMobile}
-            moduleGenreAnimeHome={style.GenreAnimeHomeMobile}
-            moduleYearAnimeHome={style.YearAnimeHomeMobile}
+            moduleContainerCardAnimeHome={style.ContainerCardAnimeHomePC}
+            moduleCardAnimeHomeImg={style.CardAnimeHomeImgPC}
+            moduleContainerCardAnimeInfo={style.ContainerCardAnimeInfoPC}
+            moduleTitleAnimeHome={style.TitleAnimeHomePC}
+            moduleGenreAnimeHome={style.GenreAnimeHomePC}
+            moduleYearAnimeHome={style.YearAnimeHomePC}
           />
         ))}
       </section>
 
       <div>
         <button
-          className="ButtonCardAnimeHomeMobile"
           type="button"
+          className="ButtonCardAnimeHomePC"
           onClick={() => {
-            ButtonCardAnimeHomeMobile();
+            ButtonCardAnimeHomePC();
           }}
         >
           En voir plus
@@ -66,4 +66,4 @@ function HomeMainMobile() {
   );
 }
 
-export default HomeMainMobile;
+export default HomeMainPC;

@@ -1,20 +1,20 @@
 @import "../../../Root.css";
 
-.HomeMainMobile {
+.HomeMainPC {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (max-width: 767px) {
     display: none;
   }
 }
 
 /*Style du button "En voir plus"*/
 
-.ButtonCardAnimeHomeMobile {
+.ButtonCardAnimeHomePC {
   padding: 0.6em 2em;
   border: none;
   outline: none;
@@ -30,7 +30,7 @@
   margin: 2rem 0rem 0rem 0rem;
 }
 
-.ButtonCardAnimeHomeMobile:before {
+.ButtonCardAnimeHomePC:before {
   content: "";
   background: linear-gradient(
     45deg,
@@ -53,12 +53,12 @@
   -webkit-filter: blur(5px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  animation: glowing-ButtonCardAnimeHomeMobile 20s linear infinite;
+  animation: glowing-ButtonCardAnimeHomePC 20s linear infinite;
   transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
 }
 
-@keyframes glowing-ButtonCardAnimeHomeMobile {
+@keyframes glowing-ButtonCardAnimeHomePC {
   0% {
     background-position: 0 0;
   }
@@ -70,7 +70,7 @@
   }
 }
 
-.ButtonCardAnimeHomeMobile:after {
+.ButtonCardAnimeHomePC:after {
   z-index: -1;
   content: "";
   position: absolute;

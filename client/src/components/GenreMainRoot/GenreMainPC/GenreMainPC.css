@@ -8,3 +8,14 @@
     display: none;
   }
 }
+
+.DescriptionGenrePC {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.DescriptionGenrePC > h3 {
+  color: var(--TextColorRoot);
+  text-align: center;
+}
