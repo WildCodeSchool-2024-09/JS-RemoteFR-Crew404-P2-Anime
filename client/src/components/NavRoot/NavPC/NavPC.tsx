@@ -4,13 +4,16 @@ import Drapeau from "../DrapeauRoot";
 import styles from "../DrapeauRoot.module.css";
 import Search from "../Search";
 
+//Import des images
+import Logo from "../../../assets/images/GenkiAnimeLogo.webp";
+
 function NavPC() {
   return (
     <div className="nav-desktop">
       <div className="ContainerPC-1">
         <div className="Logo">
           <Link to="/home">
-            <img src="./data-img/GenkiAnimeLogo.webp" alt="Logo" />
+            <img src={Logo} alt="Logo" />
           </Link>
         </div>
 

@@ -1,4 +1,20 @@
+import CardAnimeMainRoot from "../components/CardAnimeMainRoot/CardAnimeMainRoot";
+import FooterRoot from "../components/FooterRoot/FooterRoot";
+import NavRoot from "../components/NavRoot/NavRoot";
+
 function CardAnime() {
-  return <h1>Je suis dans la page CardAnime</h1>;
+  return (
+    <>
+      <header>
+        <NavRoot />
+      </header>
+
+      <main>
+        <CardAnimeMainRoot />
+      </main>
+
+      <FooterRoot />
+    </>
+  );
 }
 export default CardAnime;

@@ -12,6 +12,13 @@
   }
 }
 
+.ContainerResultSearchMobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 180px;
+}
+
 /*Style du button "En voir plus"*/
 
 .ButtonCardAnimeHomeMobile {
