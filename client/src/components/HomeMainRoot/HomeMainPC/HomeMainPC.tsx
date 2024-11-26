@@ -57,6 +57,7 @@ function HomeMainPC() {
       {/* La classe de cette section est liée au module CardAnimeHomeMainRoot.module.css */}
       <section className={style.ContainerRootCardAnimeHomePC}>
         {dataAnime.map((anime) => (
+          <Link key={anime.mal_id} to={`/anime/data/${anime.mal_id}`}>
           <CardAnimeHomeMainRoot
             key={anime?.mal_id}
             // Données de la card
@@ -73,6 +74,7 @@ function HomeMainPC() {
             moduleGenreAnimeHome={style.GenreAnimeHomePC}
             moduleYearAnimeHome={style.YearAnimeHomePC}
           />
+          </Link>
         ))}
       </section>
 
