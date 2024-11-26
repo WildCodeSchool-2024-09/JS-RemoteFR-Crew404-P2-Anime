@@ -59,22 +59,24 @@ function HomeMainMobile() {
       {/* La classe de cette section est liée au module CardAnimeHomeMainRoot.module.css */}
       <section className={style.ContainerRootCardAnimeHomeMobile}>
         {dataAnime.map((anime) => (
-          <CardAnimeHomeMainRoot
-            key={anime?.mal_id}
-            // Données de la card
-            src={anime.images?.jpg?.large_image_url}
-            genre={anime.genres[0]?.name || "Inconnu"}
-            yearStart={anime.aired?.prop?.from?.year || "Inconnu"}
-            yearEnd={anime.aired?.prop?.to?.year || "En cours"}
-            title={anime.title || "Sans titre"}
-            // Données des classes liées au module CardAnimeHomeMainRoot.module.css
-            moduleContainerCardAnimeHome={style.ContainerCardAnimeHomeMobile}
-            moduleCardAnimeHomeImg={style.CardAnimeHomeImgMobile}
-            moduleContainerCardAnimeInfo={style.ContainerCardAnimeInfoMobile}
-            moduleTitleAnimeHome={style.TitleAnimeHomeMobile}
-            moduleGenreAnimeHome={style.GenreAnimeHomeMobile}
-            moduleYearAnimeHome={style.YearAnimeHomeMobile}
-          />
+          <Link key={anime.mal_id} to={`/anime/data/${anime.mal_id}`}>
+            <CardAnimeHomeMainRoot
+              key={anime?.mal_id}
+              // Données de la card
+              src={anime.images?.jpg?.large_image_url}
+              genre={anime.genres[0]?.name || "Inconnu"}
+              yearStart={anime.aired?.prop?.from?.year || "Inconnu"}
+              yearEnd={anime.aired?.prop?.to?.year || "En cours"}
+              title={anime.title || "Sans titre"}
+              // Données des classes liées au module CardAnimeHomeMainRoot.module.css
+              moduleContainerCardAnimeHome={style.ContainerCardAnimeHomeMobile}
+              moduleCardAnimeHomeImg={style.CardAnimeHomeImgMobile}
+              moduleContainerCardAnimeInfo={style.ContainerCardAnimeInfoMobile}
+              moduleTitleAnimeHome={style.TitleAnimeHomeMobile}
+              moduleGenreAnimeHome={style.GenreAnimeHomeMobile}
+              moduleYearAnimeHome={style.YearAnimeHomeMobile}
+            />
+          </Link>
         ))}
       </section>
 
