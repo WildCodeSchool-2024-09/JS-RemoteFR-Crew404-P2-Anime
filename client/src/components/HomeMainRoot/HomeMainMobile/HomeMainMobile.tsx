@@ -56,10 +56,14 @@ function HomeMainMobile() {
 
       <DescriptionHomeMainRoot />
 
-      {/* La classe de cette section est liée au module CardAnimeHomeMainRoot.module.css */}
+      {/* La classe de cette section et le Link sont liées au module CardAnimeHomeMainRoot.module.css */}
       <section className={style.ContainerRootCardAnimeHomeMobile}>
         {dataAnime.map((anime) => (
-          <Link key={anime.mal_id} to={`/anime/data/${anime.mal_id}`}>
+          <Link
+            key={anime.mal_id}
+            to={`/anime/data/${anime.mal_id}`}
+            className={style.CardLink}
+          >
             <CardAnimeHomeMainRoot
               key={anime?.mal_id}
               // Données de la card

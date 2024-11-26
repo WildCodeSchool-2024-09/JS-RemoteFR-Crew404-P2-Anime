@@ -54,26 +54,30 @@ function HomeMainPC() {
       </div>
       <DescriptionHomeMainRoot />
 
-      {/* La classe de cette section est liée au module CardAnimeHomeMainRoot.module.css */}
+      {/* La classe de cette section et Link sont liées au module CardAnimeHomeMainRoot.module.css */}
       <section className={style.ContainerRootCardAnimeHomePC}>
         {dataAnime.map((anime) => (
-          <Link key={anime.mal_id} to={`/anime/data/${anime.mal_id}`}>
-          <CardAnimeHomeMainRoot
-            key={anime?.mal_id}
-            // Données de la card
-            src={anime.images?.jpg?.large_image_url}
-            genre={anime.genres[0]?.name || "Inconnu"}
-            yearStart={anime.aired?.prop?.from?.year || "Inconnu"}
-            yearEnd={anime.aired?.prop?.to?.year || "En cours"}
-            title={anime.title || "Sans titre"}
-            // Données des classes liées au module CardAnimeHomeMainRoot.module.css
-            moduleContainerCardAnimeHome={style.ContainerCardAnimeHomePC}
-            moduleCardAnimeHomeImg={style.CardAnimeHomeImgPC}
-            moduleContainerCardAnimeInfo={style.ContainerCardAnimeInfoPC}
-            moduleTitleAnimeHome={style.TitleAnimeHomePC}
-            moduleGenreAnimeHome={style.GenreAnimeHomePC}
-            moduleYearAnimeHome={style.YearAnimeHomePC}
-          />
+          <Link
+            key={anime.mal_id}
+            to={`/anime/data/${anime.mal_id}`}
+            className={style.CardLink}
+          >
+            <CardAnimeHomeMainRoot
+              key={anime?.mal_id}
+              // Données de la card
+              src={anime.images?.jpg?.large_image_url}
+              genre={anime.genres[0]?.name || "Inconnu"}
+              yearStart={anime.aired?.prop?.from?.year || "Inconnu"}
+              yearEnd={anime.aired?.prop?.to?.year || "En cours"}
+              title={anime.title || "Sans titre"}
+              // Données des classes liées au module CardAnimeHomeMainRoot.module.css
+              moduleContainerCardAnimeHome={style.ContainerCardAnimeHomePC}
+              moduleCardAnimeHomeImg={style.CardAnimeHomeImgPC}
+              moduleContainerCardAnimeInfo={style.ContainerCardAnimeInfoPC}
+              moduleTitleAnimeHome={style.TitleAnimeHomePC}
+              moduleGenreAnimeHome={style.GenreAnimeHomePC}
+              moduleYearAnimeHome={style.YearAnimeHomePC}
+            />
           </Link>
         ))}
       </section>

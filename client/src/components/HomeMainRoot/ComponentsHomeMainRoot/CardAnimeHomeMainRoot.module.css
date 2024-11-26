@@ -2,6 +2,12 @@
 
 /*--------------------------------------------------------------------------*/
 
+/*Style de la balise Link*/
+.CardLink {
+  text-decoration: none;
+  color: inherit;
+}
+
 /*Version mobile style CSS module*/
 .ContainerRootCardAnimeHomeMobile {
   display: grid;
