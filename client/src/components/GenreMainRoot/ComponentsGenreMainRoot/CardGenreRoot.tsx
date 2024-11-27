@@ -12,7 +12,7 @@ function CardGenreRoot(props: CardGenreRootProps) {
 
       <Link to="/home/genre/adventure">Adventure</Link>
 
-      <Link to="/home/genre/comedie">Comédie</Link>
+      <Link to="/home/genre/comedy">Comedy</Link>
 
       <Link to="/home/genre/drama">Drama</Link>
 

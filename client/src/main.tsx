@@ -15,6 +15,7 @@ import CardAnime from "./pages/CardAnime";
 
 import PageAction from "./pages/CategoryGenre/PageAction/PageAction";
 import PageAdventure from "./pages/CategoryGenre/PageAdventure/PageAdventure";
+import PageComedy from "./pages/CategoryGenre/PageComedy/PageComedy";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
       {
         path: "/home/genre/adventure",
         element: <PageAdventure />,
+      },
+      {
+        path: "/home/genre/comedy",
+        element: <PageComedy />,
       },
     ],
   },
