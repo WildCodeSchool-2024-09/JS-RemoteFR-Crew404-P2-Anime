@@ -3,24 +3,19 @@ import { useSearch } from "../../../../contexts/SearchContext";
 import CardAnimeHomeMainRoot from "../../../HomeMainRoot/ComponentsHomeMainRoot/CardAnimeHomeMainRoot";
 import style from "../../../HomeMainRoot/ComponentsHomeMainRoot/CardAnimeHomeMainRoot.module.css";
 import "./PageActionMobile.css";
-// import type { SearchType } from "../../../../datas/DataHome/SearchType";
+import type { SearchType } from "../../../../datas/DataHome/SearchType";
 
 function PageActionMobile() {
-  // const { dataAnimeAction, setDataAnimeAction } = useSearch();
-  const { dataAnimeAction } = useSearch();
+  const { dataAnimeAction, setDataAnimeAction } = useSearch();
 
   const DataAnimeActionMobileAPI = () => {
     fetch("https://api.jikan.moe/v4/random/anime")
       .then((response) => response.json())
       .then((data) => {
         if (data?.data) {
-          // const nouvelAnime = data.data[0] as SearchType;
-          // {/** biome-rule-off  */}
-          // setDataAnimeAction((ancienAnime: SearchType[]) => [
-          //   ...ancienAnime,
-          //   nouvelAnime,
-          // ]);
-          // {/** biome-rule-on  */}
+          const nouvelAnime = data.data[0] as SearchType;
+
+          setDataAnimeAction([...dataAnimeAction, nouvelAnime] as SearchType[]);
         } else {
           console.error("Données incorrectes reçues depuis l'API :", data);
         }
