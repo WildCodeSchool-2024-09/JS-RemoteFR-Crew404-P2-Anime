@@ -2,7 +2,7 @@ import "./HomeMainPC.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useSearch } from "../../../contexts/SearchContext";
-import { structureDataAnime } from "../../../datas/structureDataAnime";
+import { structureDataAnime } from "../../../datas/DataHome/structureDataAnime";
 import CardAnimeHomeMainRoot from "../ComponentsHomeMainRoot/CardAnimeHomeMainRoot";
 import style from "../ComponentsHomeMainRoot/CardAnimeHomeMainRoot.module.css";
 import DescriptionHomeMainRoot from "../ComponentsHomeMainRoot/DescriptionHomeMainRoot";
@@ -36,7 +36,7 @@ function HomeMainPC() {
             <CardAnimeHomeMainRoot
               key={animeSearch[0]?.mal_id}
               src={animeSearch[0]?.images?.jpg?.large_image_url}
-              genre={animeSearch[0]?.genres[0]?.name || "Inconnu"}
+              genre={animeSearch[0]?.genres?.[0]?.name || "Inconnu"}
               yearStart={animeSearch[0]?.aired?.prop?.from?.year || "Inconnu"}
               yearEnd={animeSearch[0]?.aired?.prop?.to?.year || "En cours"}
               title={animeSearch[0]?.title || "Sans titre"}

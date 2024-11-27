@@ -6,8 +6,8 @@
 Pour inverser jour et nuit il faut juste inverser le chiffre des
 variable controle. 1 est remplacé par 2 et 2 remplacé par 1*/
 
-  --controle1: rgb(0, 0, 0);
-  --controle2: rgb(255, 255, 255);
+  --controle2: rgb(0, 0, 0);
+  --controle1: rgb(255, 255, 255);
 
   /*Contrôle des couleurs text et background-color du site*/
   --TextColorButtonRoot: rgb(0, 0, 0);

@@ -4,26 +4,22 @@ export interface SearchType {
       large_image_url: string;
     };
   };
-
   title: string;
   mal_id: number;
-
-  aired: {
-    prop: {
-      from: {
-        year: string;
+  aired?: {
+    prop?: {
+      from?: {
+        year?: string;
       };
-      to: {
-        year: string;
+      to?: {
+        year?: string;
       };
     };
   };
-
-  genres: [
+  genres?: [
     {
       name: string;
     },
   ];
-
-  synopsis: string;
+  synopsis?: string;
 }

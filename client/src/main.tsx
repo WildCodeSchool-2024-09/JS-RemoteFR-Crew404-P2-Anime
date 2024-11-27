@@ -13,6 +13,8 @@ import Home from "./pages/Home";
 
 import CardAnime from "./pages/CardAnime";
 
+import PageAction from "./pages/CategoryGenre/PageAction/PageAction";
+
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
 
@@ -37,12 +39,20 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
+        path: "/home/genre",
+        element: <Genre />,
+      },
+      {
         path: "/genre",
         element: <Genre />,
       },
       {
         path: "/anime/data/:id",
         element: <CardAnime />,
+      },
+      {
+        path: "/home/genre/action",
+        element: <PageAction />,
       },
     ],
   },

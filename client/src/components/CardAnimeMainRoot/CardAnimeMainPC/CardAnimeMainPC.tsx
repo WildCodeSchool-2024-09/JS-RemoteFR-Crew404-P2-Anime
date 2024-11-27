@@ -43,10 +43,10 @@ function CardAnimeMainPC() {
       <ComponentCardAnimeMainRoot
         title={anime.title || "Sans titre"}
         src={anime.images?.jpg?.large_image_url}
-        genre={anime.genres[0]?.name || "Inconnu"}
+        genre={anime.genres?.[0]?.name || "Inconnu"}
         yearStart={anime.aired?.prop?.from?.year || "Inconnu"}
         yearEnd={anime.aired?.prop?.to?.year || "En cours"}
-        synopsis={anime.synopsis}
+        synopsis={anime?.synopsis}
         // Données des classes liées au module CardAnimeHomeMainRoot.module.css
         moduleContainerCardAnime={style.ContainerCardAnimePC}
         moduleCardAnimeImg={style.CardAnimeImgPC}
