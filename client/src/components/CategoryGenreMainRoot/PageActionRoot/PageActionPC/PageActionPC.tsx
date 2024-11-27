@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
 import CardAnimeHomeMainRoot from "../../../HomeMainRoot/ComponentsHomeMainRoot/CardAnimeHomeMainRoot";
 import style from "../../../HomeMainRoot/ComponentsHomeMainRoot/CardAnimeHomeMainRoot.module.css";
-import "./PageActionMobile.css";
+import "./PageActionPC.css";
 
 import { useState } from "react";
 import { dataPageAction } from "../../../../datas/DataCategoryGenre/DataPageAction/dataPageAction";
 
-function PageActionMobile() {
+function PageActionPC() {
   const [dataAnimeAction, setDataAnimeAction] = useState(dataPageAction);
   const [count, setCount] = useState(1);
 
-  const DataAnimeActionMobileAPI = () => {
+  const DataAnimeActionPCAPI = () => {
     fetch(`https://api.jikan.moe/v4/anime?genres=1&page=${count}`)
       .then((response) => response.json())
       .then((data) => {
@@ -27,15 +27,15 @@ function PageActionMobile() {
     setCount((prevCount) => prevCount + 1);
   };
 
-  const ButtonAnimeActionMobile = (nombreAppels = 1) => {
+  const ButtonAnimeActionPC = (nombreAppels = 1) => {
     for (let i = 0; i < nombreAppels; i++) {
-      DataAnimeActionMobileAPI();
+      DataAnimeActionPCAPI();
     }
   };
 
   return (
-    <div className="PageActionMobile">
-      <section className={style.ContainerRootCardAnimeHomeMobile}>
+    <div className="PageActionPC">
+      <section className={style.ContainerRootCardAnimeHomePC}>
         {dataAnimeAction.map((anime) => (
           <Link
             key={anime.mal_id}
@@ -49,12 +49,12 @@ function PageActionMobile() {
               yearStart={anime.aired?.prop?.from?.year || "Inconnu"}
               yearEnd={anime.aired?.prop?.to?.year || "En cours"}
               title={anime.title || "Sans titre"}
-              moduleContainerCardAnimeHome={style.ContainerCardAnimeHomeMobile}
-              moduleCardAnimeHomeImg={style.CardAnimeHomeImgMobile}
-              moduleContainerCardAnimeInfo={style.ContainerCardAnimeInfoMobile}
-              moduleTitleAnimeHome={style.TitleAnimeHomeMobile}
-              moduleGenreAnimeHome={style.GenreAnimeHomeMobile}
-              moduleYearAnimeHome={style.YearAnimeHomeMobile}
+              moduleContainerCardAnimeHome={style.ContainerCardAnimeHomePC}
+              moduleCardAnimeHomeImg={style.CardAnimeHomeImgPC}
+              moduleContainerCardAnimeInfo={style.ContainerCardAnimeInfoPC}
+              moduleTitleAnimeHome={style.TitleAnimeHomePC}
+              moduleGenreAnimeHome={style.GenreAnimeHomePC}
+              moduleYearAnimeHome={style.YearAnimeHomePC}
             />
           </Link>
         ))}
@@ -62,10 +62,10 @@ function PageActionMobile() {
 
       <div>
         <button
-          className="ButtonCardAnimeHomeMobile"
+          className="ButtonCardAnimeHomePC"
           type="button"
           onClick={() => {
-            ButtonAnimeActionMobile();
+            ButtonAnimeActionPC();
           }}
         >
           En voir plus
@@ -75,4 +75,4 @@ function PageActionMobile() {
   );
 }
 
-export default PageActionMobile;
+export default PageActionPC;
