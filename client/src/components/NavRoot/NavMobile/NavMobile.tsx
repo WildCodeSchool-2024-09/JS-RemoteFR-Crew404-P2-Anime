@@ -6,6 +6,10 @@ import styles from "../DrapeauRoot.module.css";
 import Search from "../Search";
 import MenuBurger from "./MenuBurger";
 
+//Import des images
+
+import Logo from "../../../assets/images/GenkiAnimeLogo.webp";
+
 function NavMobile() {
   const [active, setActive] = useState(false);
   const funcActive = () => {
@@ -17,11 +21,7 @@ function NavMobile() {
       <section className="NavBarre">
         <div>
           <Link to="/home">
-            <img
-              src="./data-img/GenkiAnimeLogo.webp"
-              alt="#"
-              className="Logo"
-            />
+            <img src={Logo} alt="Logo" className="Logo" />
           </Link>
         </div>
         <Search />

@@ -12,6 +12,13 @@
   }
 }
 
+.ContainerResultSearchPC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 240px;
+}
+
 /*Style du button "En voir plus"*/
 
 .ButtonCardAnimeHomePC {

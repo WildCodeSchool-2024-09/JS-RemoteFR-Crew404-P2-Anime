@@ -2,6 +2,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { SearchProvider } from "./contexts/SearchContext";
 
 /* ************************************************************************* */
 
@@ -9,6 +10,8 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import Genre from "./pages/Genre";
 import Home from "./pages/Home";
+
+import CardAnime from "./pages/CardAnime";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -37,6 +40,10 @@ const router = createBrowserRouter([
         path: "/genre",
         element: <Genre />,
       },
+      {
+        path: "/anime/data/:id",
+        element: <CardAnime />,
+      },
     ],
   },
 ]);
@@ -52,7 +59,9 @@ if (rootElement == null) {
 // Render the app inside the root element
 createRoot(rootElement).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <SearchProvider>
+      <RouterProvider router={router} />
+    </SearchProvider>
   </StrictMode>,
 );
 

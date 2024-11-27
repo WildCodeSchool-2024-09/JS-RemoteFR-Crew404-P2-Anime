@@ -1,3 +1,7 @@
+import DrapeauEN from "../../assets/images/drapeau-anglais.png";
+//Import des images
+import DrapeauFR from "../../assets/images/drapeau-francais.png";
+
 interface DrapeauProps {
   moduleContainerDrapeau: string;
   moduleLanguageFR: string;
@@ -16,14 +20,14 @@ function Drapeau(props: DrapeauProps) {
     <section className={moduleContainerDrapeau}>
       <div className={moduleLanguageFR}>
         <img
-          src="./data-img/drapeau-francais.png"
+          src={DrapeauFR}
           alt="Langue français"
           className={moduleImgDrapeau}
         />
       </div>
       <div className={moduleLanguageEN}>
         <img
-          src="./data-img/drapeau-anglais.png"
+          src={DrapeauEN}
           alt="English language"
           className={moduleImgDrapeau}
         />

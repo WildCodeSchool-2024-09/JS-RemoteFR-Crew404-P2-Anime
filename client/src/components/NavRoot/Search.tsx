@@ -1,15 +1,15 @@
-import { useState } from "react";
+import { useSearch } from "../../contexts/SearchContext";
 
 function Search() {
-  const [NavSearch, setNavSearch] = useState("");
+  const { search, setSearch } = useSearch();
   return (
     <input
       type="text"
-      value={NavSearch}
+      value={search}
       className="Search"
       placeholder="  Rechercher un anime"
       onChange={(event) => {
-        setNavSearch(event.target.value);
+        setSearch(event.target.value);
       }}
     />
   );
