@@ -35,7 +35,7 @@ function CardAnimeMainPC() {
 
   /*Si les données ne sont pas disponible, afficher un message d'attente*/
   if (!anime) {
-    return <p>Chargement...</p>;
+    return <p className="ChargementPC">Chargement...</p>;
   }
 
   return (

@@ -99,9 +99,14 @@
     grid-template-columns: repeat(13, var(--SizeGrid));
   }
 }
-@media (min-width: 2284px) and (max-width: 2435px) {
+@media (min-width: 2132px) and (max-width: 2283px) {
   .CardGenrePC {
     grid-template-columns: repeat(14, var(--SizeGrid));
+  }
+}
+@media (min-width: 2284px) and (max-width: 2435px) {
+  .CardGenrePC {
+    grid-template-columns: repeat(15, var(--SizeGrid));
   }
 }
 @media (min-width: 2436px) {
