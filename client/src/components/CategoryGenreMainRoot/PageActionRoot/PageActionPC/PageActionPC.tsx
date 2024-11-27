@@ -45,7 +45,9 @@ function PageActionPC() {
             <CardAnimeHomeMainRoot
               key={anime?.mal_id}
               src={anime.images?.jpg?.large_image_url}
-              genre={anime.genres?.[0]?.name || "Inconnu"}
+              genre={
+                anime.genres?.find((g) => g.mal_id === 1)?.name || "Inconnu"
+              }
               yearStart={anime.aired?.prop?.from?.year || "Inconnu"}
               yearEnd={anime.aired?.prop?.to?.year || "En cours"}
               title={anime.title || "Sans titre"}

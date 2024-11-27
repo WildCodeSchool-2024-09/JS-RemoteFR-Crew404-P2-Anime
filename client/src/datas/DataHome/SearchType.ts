@@ -19,6 +19,7 @@ export interface SearchType {
   genres?: [
     {
       name: string;
+      mal_id: number;
     },
   ];
   synopsis?: string;

@@ -1,22 +1,23 @@
 import { Link } from "react-router-dom";
 import CardAnimeHomeMainRoot from "../../../HomeMainRoot/ComponentsHomeMainRoot/CardAnimeHomeMainRoot";
 import style from "../../../HomeMainRoot/ComponentsHomeMainRoot/CardAnimeHomeMainRoot.module.css";
-import "./PageActionMobile.css";
+import "./PageAdventureMobile.css";
 
 import { useState } from "react";
-import { dataPageAction } from "../../../../datas/DataCategoryGenre/DataPageAction/dataPageAction";
+import { dataPageAdventure } from "../../../../datas/DataCategoryGenre/DataPageAdventure/dataPageAdventure";
 
-function PageActionMobile() {
-  const [dataAnimeAction, setDataAnimeAction] = useState(dataPageAction);
+function PageAdventureMobile() {
+  const [dataAnimeAdventure, setDataAnimeAdventure] =
+    useState(dataPageAdventure);
   const [count, setCount] = useState(1);
 
-  const DataAnimeActionMobileAPI = () => {
-    fetch(`https://api.jikan.moe/v4/anime?genres=1&page=${count}`)
+  const DataAnimeAdventureMobileAPI = () => {
+    fetch(`https://api.jikan.moe/v4/anime?genres=2&page=${count}`)
       .then((response) => response.json())
       .then((data) => {
         if (data?.data) {
           const nouvelAnime = data.data;
-          setDataAnimeAction((prevData) => [...prevData, ...nouvelAnime]); // Concatène correctement
+          setDataAnimeAdventure((prevData) => [...prevData, ...nouvelAnime]);
         } else {
           console.error("Données incorrectes reçues depuis l'API :", data);
         }
@@ -27,16 +28,16 @@ function PageActionMobile() {
     setCount((prevCount) => prevCount + 1);
   };
 
-  const ButtonAnimeActionMobile = (nombreAppels = 1) => {
+  const ButtonAnimeAdventureMobile = (nombreAppels = 1) => {
     for (let i = 0; i < nombreAppels; i++) {
-      DataAnimeActionMobileAPI();
+      DataAnimeAdventureMobileAPI();
     }
   };
 
   return (
-    <div className="PageActionMobile">
+    <div className="PageAdventureMobile">
       <section className={style.ContainerRootCardAnimeHomeMobile}>
-        {dataAnimeAction.map((anime) => (
+        {dataAnimeAdventure.map((anime) => (
           <Link
             key={anime.mal_id}
             to={`/anime/data/${anime.mal_id}`}
@@ -46,7 +47,7 @@ function PageActionMobile() {
               key={anime?.mal_id}
               src={anime.images?.jpg?.large_image_url}
               genre={
-                anime.genres?.find((g) => g.mal_id === 1)?.name || "Inconnu"
+                anime.genres?.find((g) => g.mal_id === 2)?.name || "Inconnu"
               }
               yearStart={anime.aired?.prop?.from?.year || "Inconnu"}
               yearEnd={anime.aired?.prop?.to?.year || "En cours"}
@@ -67,7 +68,7 @@ function PageActionMobile() {
           className="ButtonCardAnimeHomeMobile"
           type="button"
           onClick={() => {
-            ButtonAnimeActionMobile();
+            ButtonAnimeAdventureMobile();
           }}
         >
           En voir plus
@@ -77,4 +78,4 @@ function PageActionMobile() {
   );
 }
 
-export default PageActionMobile;
+export default PageAdventureMobile;

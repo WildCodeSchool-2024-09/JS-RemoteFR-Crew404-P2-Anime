@@ -1,21 +1,21 @@
 import type { SearchType } from "../../DataHome/SearchType";
 
-export const dataPageAction: SearchType[] = [
+export const dataPageAdventure: SearchType[] = [
   {
     images: {
       jpg: {
         large_image_url:
-          "https://cdn.myanimelist.net/images/anime/10/78745l.webp",
+          "https://cdn.myanimelist.net/images/anime/1702/106229l.jpg",
       },
     },
 
-    title: "My Hero Academia",
-    mal_id: 31964,
+    title: "Tower of God",
+    mal_id: 40221,
 
     aired: {
       prop: {
         from: {
-          year: "2016",
+          year: "2020",
         },
         to: {
           year: "En cours",
@@ -25,8 +25,8 @@ export const dataPageAction: SearchType[] = [
 
     genres: [
       {
-        name: "Action",
-        mal_id: 1,
+        name: "Adventure",
+        mal_id: 2,
       },
     ],
     synopsis: "",
@@ -56,8 +56,8 @@ export const dataPageAction: SearchType[] = [
 
     genres: [
       {
-        name: "Action",
-        mal_id: 1,
+        name: "Adventure",
+        mal_id: 2,
       },
     ],
     synopsis: "",
@@ -87,8 +87,8 @@ export const dataPageAction: SearchType[] = [
 
     genres: [
       {
-        name: "Action",
-        mal_id: 1,
+        name: "Adventure",
+        mal_id: 2,
       },
     ],
     synopsis: "",
@@ -98,110 +98,17 @@ export const dataPageAction: SearchType[] = [
     images: {
       jpg: {
         large_image_url:
-          "https://cdn.myanimelist.net/images/anime/5/18179l.webp",
+          "https://cdn.myanimelist.net/images/anime/1500/139931l.jpg",
       },
     },
 
-    title: "Fairy Tail",
-    mal_id: 6702,
+    title: "Shangri-La Frontier",
+    mal_id: 52347,
 
     aired: {
       prop: {
         from: {
-          year: "2009",
-        },
-        to: {
-          year: "2019",
-        },
-      },
-    },
-
-    genres: [
-      {
-        name: "Action",
-        mal_id: 1,
-      },
-    ],
-    synopsis: "",
-  },
-
-  {
-    images: {
-      jpg: {
-        large_image_url:
-          "https://cdn.myanimelist.net/images/anime/4/84177l.jpg",
-      },
-    },
-
-    title: "L'Attaque des Titans",
-    mal_id: 28755,
-
-    aired: {
-      prop: {
-        from: {
-          year: "2013",
-        },
-        to: {
           year: "2023",
-        },
-      },
-    },
-
-    genres: [
-      {
-        name: "Action",
-        mal_id: 1,
-      },
-    ],
-    synopsis: "",
-  },
-
-  {
-    images: {
-      jpg: {
-        large_image_url:
-          "https://cdn.myanimelist.net/images/anime/1286/99889l.jpg",
-      },
-    },
-
-    title: "Demon Slayer",
-    mal_id: 38000,
-
-    aired: {
-      prop: {
-        from: {
-          year: "2020",
-        },
-        to: {
-          year: "En cours",
-        },
-      },
-    },
-
-    genres: [
-      {
-        name: "Action",
-        mal_id: 1,
-      },
-    ],
-    synopsis: "",
-  },
-
-  {
-    images: {
-      jpg: {
-        large_image_url:
-          "https://cdn.myanimelist.net/images/anime/1801/142390l.webp",
-      },
-    },
-
-    title: "Solo Leveling",
-    mal_id: 52299,
-
-    aired: {
-      prop: {
-        from: {
-          year: "2024",
         },
         to: {
           year: "En cours",
@@ -212,7 +119,100 @@ export const dataPageAction: SearchType[] = [
     genres: [
       {
         name: "Adventure",
-        mal_id: 1,
+        mal_id: 2,
+      },
+    ],
+    synopsis: "",
+  },
+
+  {
+    images: {
+      jpg: {
+        large_image_url:
+          "https://cdn.myanimelist.net/images/anime/1836/116060l.jpg",
+      },
+    },
+
+    title: "Seirei Gensouki: Spirit Chronicles",
+    mal_id: 44203,
+
+    aired: {
+      prop: {
+        from: {
+          year: "2021",
+        },
+        to: {
+          year: "2024",
+        },
+      },
+    },
+
+    genres: [
+      {
+        name: "Adventure",
+        mal_id: 2,
+      },
+    ],
+    synopsis: "",
+  },
+
+  {
+    images: {
+      jpg: {
+        large_image_url:
+          "https://cdn.myanimelist.net/images/anime/1522/128039l.jpg",
+      },
+    },
+
+    title: "Re:ZERO –Starting Life in Another World–",
+    mal_id: 31240,
+
+    aired: {
+      prop: {
+        from: {
+          year: "2016",
+        },
+        to: {
+          year: "En cours",
+        },
+      },
+    },
+
+    genres: [
+      {
+        name: "Adventure",
+        mal_id: 2,
+      },
+    ],
+    synopsis: "",
+  },
+
+  {
+    images: {
+      jpg: {
+        large_image_url:
+          "https://cdn.myanimelist.net/images/anime/10/75195l.jpg",
+      },
+    },
+
+    title: "Blue Exorcist",
+    mal_id: 9919,
+
+    aired: {
+      prop: {
+        from: {
+          year: "2011",
+        },
+        to: {
+          year: "En cours",
+        },
+      },
+    },
+
+    genres: [
+      {
+        name: "Adventure",
+        mal_id: 2,
       },
     ],
     synopsis: "",
@@ -242,8 +242,8 @@ export const dataPageAction: SearchType[] = [
 
     genres: [
       {
-        name: "Fantasy",
-        mal_id: 1,
+        name: "Adventure",
+        mal_id: 2,
       },
     ],
     synopsis: "",
@@ -253,17 +253,17 @@ export const dataPageAction: SearchType[] = [
     images: {
       jpg: {
         large_image_url:
-          "https://cdn.myanimelist.net/images/anime/1171/109222l.webp",
+          "https://cdn.myanimelist.net/images/anime/1277/142022l.jpg",
       },
     },
 
-    title: "Jujutsu Kaisen",
-    mal_id: 40748,
+    title: "Dragon Ball Z",
+    mal_id: 813,
 
     aired: {
       prop: {
         from: {
-          year: "2020",
+          year: "1989",
         },
         to: {
           year: "En cours",
@@ -273,8 +273,8 @@ export const dataPageAction: SearchType[] = [
 
     genres: [
       {
-        name: "Action",
-        mal_id: 1,
+        name: "Adventure",
+        mal_id: 2,
       },
     ],
     synopsis: "",
@@ -284,28 +284,28 @@ export const dataPageAction: SearchType[] = [
     images: {
       jpg: {
         large_image_url:
-          "https://cdn.myanimelist.net/images/anime/1565/111305l.jpg",
+          "https://cdn.myanimelist.net/images/anime/5/18179l.webp",
       },
     },
 
-    title: "Naruto Shippuden",
-    mal_id: 1735,
+    title: "Fairy Tail",
+    mal_id: 6702,
 
     aired: {
       prop: {
         from: {
-          year: "2007",
+          year: "2009",
         },
         to: {
-          year: "2017",
+          year: "2019",
         },
       },
     },
 
     genres: [
       {
-        name: "Action",
-        mal_id: 1,
+        name: "Adventure",
+        mal_id: 2,
       },
     ],
     synopsis: "",

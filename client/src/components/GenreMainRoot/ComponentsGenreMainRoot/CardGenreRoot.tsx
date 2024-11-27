@@ -10,7 +10,7 @@ function CardGenreRoot(props: CardGenreRootProps) {
     <div className={moduleContainerCardGenreRoot}>
       <Link to="/home/genre/action">Action</Link>
 
-      <Link to="/home/genre/aventure">Aventure</Link>
+      <Link to="/home/genre/adventure">Adventure</Link>
 
       <Link to="/home/genre/comedie">Comédie</Link>
 

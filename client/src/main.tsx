@@ -14,6 +14,7 @@ import Home from "./pages/Home";
 import CardAnime from "./pages/CardAnime";
 
 import PageAction from "./pages/CategoryGenre/PageAction/PageAction";
+import PageAdventure from "./pages/CategoryGenre/PageAdventure/PageAdventure";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path: "/home/genre/action",
         element: <PageAction />,
+      },
+      {
+        path: "/home/genre/adventure",
+        element: <PageAdventure />,
       },
     ],
   },
