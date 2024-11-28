@@ -24,6 +24,7 @@ import PageSeinen from "./pages/CategoryGenre/PageSeinen/PageSeinen";
 import PageShoujo from "./pages/CategoryGenre/PageShoujo/PageShoujo";
 import PageShounen from "./pages/CategoryGenre/PageShounen/PageShounen";
 import PageSports from "./pages/CategoryGenre/PageSports/PageSports";
+import PageSupernatural from "./pages/CategoryGenre/PageSupernatural/PageSupernatural";
 
 /* ************************************************************************* */
 
@@ -94,6 +95,10 @@ const router = createBrowserRouter([
       {
         path: "/home/genre/sports",
         element: <PageSports />,
+      },
+      {
+        path: "/home/genre/supernatural",
+        element: <PageSupernatural />,
       },
     ],
   },

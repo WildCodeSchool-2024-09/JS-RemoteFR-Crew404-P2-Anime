@@ -149,7 +149,7 @@ export const dataPageSports: SearchType[] = [
 
     genres: [
       {
-        name: "Sport",
+        name: "Sports",
         mal_id: 30,
       },
     ],

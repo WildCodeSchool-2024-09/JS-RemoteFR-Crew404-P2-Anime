@@ -1,6 +1,6 @@
 import type { SearchType } from "../../DataHome/SearchType";
 
-export const dataPageSports: SearchType[] = [
+export const dataPageSupernatural: SearchType[] = [
   {
     images: {
       jpg: {
@@ -160,12 +160,136 @@ export const dataPageSports: SearchType[] = [
     images: {
       jpg: {
         large_image_url:
-          "https://cdn.myanimelist.net/images/anime/1522/128039l.jpg",
+          "https://cdn.myanimelist.net/images/anime/1467/137783l.jpg",
       },
     },
 
-    title: "Re:ZERO –Starting Life in Another World–",
-    mal_id: 31240,
+    title: "Black Butler",
+    mal_id: 4898,
+
+    aired: {
+      prop: {
+        from: {
+          year: "2008",
+        },
+        to: {
+          year: "En cours",
+        },
+      },
+    },
+
+    genres: [
+      {
+        name: "Supernatural",
+        mal_id: 37,
+      },
+    ],
+    synopsis: "",
+  },
+  /*---------------------------------------------------------------------------*/
+  {
+    images: {
+      jpg: {
+        large_image_url:
+          "https://cdn.myanimelist.net/images/anime/1530/138031l.jpg",
+      },
+    },
+
+    title: "After-school Hanako-kun",
+    mal_id: 56425,
+
+    aired: {
+      prop: {
+        from: {
+          year: "2023",
+        },
+        to: {
+          year: "2023",
+        },
+      },
+    },
+
+    genres: [
+      {
+        name: "Supernatural",
+        mal_id: 37,
+      },
+    ],
+    synopsis: "",
+  },
+  /*---------------------------------------------------------------------------*/
+  {
+    images: {
+      jpg: {
+        large_image_url:
+          "https://cdn.myanimelist.net/images/anime/1145/115565l.jpg",
+      },
+    },
+
+    title: "Battle Game in 5 Seconds",
+    mal_id: 43814,
+
+    aired: {
+      prop: {
+        from: {
+          year: "2021",
+        },
+        to: {
+          year: "2021",
+        },
+      },
+    },
+
+    genres: [
+      {
+        name: "Supernatural",
+        mal_id: 37,
+      },
+    ],
+    synopsis: "",
+  },
+  /*---------------------------------------------------------------------------*/
+  {
+    images: {
+      jpg: {
+        large_image_url:
+          "https://cdn.myanimelist.net/images/anime/1806/126216l.jpg",
+      },
+    },
+
+    title: "Chainsaw Man",
+    mal_id: 44511,
+
+    aired: {
+      prop: {
+        from: {
+          year: "2022",
+        },
+        to: {
+          year: "2022",
+        },
+      },
+    },
+
+    genres: [
+      {
+        name: "Supernatural",
+        mal_id: 37,
+      },
+    ],
+    synopsis: "",
+  },
+
+  {
+    images: {
+      jpg: {
+        large_image_url:
+          "https://cdn.myanimelist.net/images/anime/3/79409l.jpg",
+      },
+    },
+
+    title: "Bungo Stray Dogs",
+    mal_id: 31478,
 
     aired: {
       prop: {
@@ -173,139 +297,15 @@ export const dataPageSports: SearchType[] = [
           year: "2016",
         },
         to: {
-          year: "En cours",
+          year: "2016",
         },
       },
     },
 
     genres: [
       {
-        name: "Adventure",
-        mal_id: 2,
-      },
-    ],
-    synopsis: "",
-  },
-  /*---------------------------------------------------------------------------*/
-  {
-    images: {
-      jpg: {
-        large_image_url:
-          "https://cdn.myanimelist.net/images/anime/10/75195l.jpg",
-      },
-    },
-
-    title: "Blue Exorcist",
-    mal_id: 9919,
-
-    aired: {
-      prop: {
-        from: {
-          year: "2011",
-        },
-        to: {
-          year: "En cours",
-        },
-      },
-    },
-
-    genres: [
-      {
-        name: "Adventure",
-        mal_id: 2,
-      },
-    ],
-    synopsis: "",
-  },
-  /*---------------------------------------------------------------------------*/
-  {
-    images: {
-      jpg: {
-        large_image_url:
-          "https://cdn.myanimelist.net/images/anime/11/39717l.webp",
-      },
-    },
-
-    title: "Sword Art Online",
-    mal_id: 11757,
-
-    aired: {
-      prop: {
-        from: {
-          year: "2012",
-        },
-        to: {
-          year: "2020",
-        },
-      },
-    },
-
-    genres: [
-      {
-        name: "Adventure",
-        mal_id: 2,
-      },
-    ],
-    synopsis: "",
-  },
-  /*---------------------------------------------------------------------------*/
-  {
-    images: {
-      jpg: {
-        large_image_url:
-          "https://cdn.myanimelist.net/images/anime/1277/142022l.jpg",
-      },
-    },
-
-    title: "Dragon Ball Z",
-    mal_id: 813,
-
-    aired: {
-      prop: {
-        from: {
-          year: "1989",
-        },
-        to: {
-          year: "En cours",
-        },
-      },
-    },
-
-    genres: [
-      {
-        name: "Adventure",
-        mal_id: 2,
-      },
-    ],
-    synopsis: "",
-  },
-
-  {
-    images: {
-      jpg: {
-        large_image_url:
-          "https://cdn.myanimelist.net/images/anime/5/18179l.webp",
-      },
-    },
-
-    title: "Fairy Tail",
-    mal_id: 6702,
-
-    aired: {
-      prop: {
-        from: {
-          year: "2009",
-        },
-        to: {
-          year: "2019",
-        },
-      },
-    },
-
-    genres: [
-      {
-        name: "Adventure",
-        mal_id: 2,
+        name: "Supernatural",
+        mal_id: 37,
       },
     ],
     synopsis: "",
