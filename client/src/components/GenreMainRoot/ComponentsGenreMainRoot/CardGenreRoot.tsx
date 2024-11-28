@@ -26,9 +26,9 @@ function CardGenreRoot(props: CardGenreRootProps) {
 
       <Link to="/home/genre/shounen">Shônen</Link>
 
-      <Link to="/home/genre/shojo">Shôjo</Link>
+      <Link to="/home/genre/shoujo">Shôjo</Link>
 
-      <Link to="/home/genre/sport">Sport</Link>
+      <Link to="/home/genre/sports">Sports</Link>
 
       <Link to="/home/genre/supernatural">Supernatural</Link>
 
