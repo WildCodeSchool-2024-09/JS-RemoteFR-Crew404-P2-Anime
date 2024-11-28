@@ -18,6 +18,7 @@ import PageAdventure from "./pages/CategoryGenre/PageAdventure/PageAdventure";
 import PageComedy from "./pages/CategoryGenre/PageComedy/PageComedy";
 import PageDrama from "./pages/CategoryGenre/PageDrama/PageDrama";
 import PageFantasy from "./pages/CategoryGenre/PageFantasy/PageFantasy";
+import PageMusic from "./pages/CategoryGenre/PageMusic/PageMusic";
 import PageRomance from "./pages/CategoryGenre/PageRomance/PageRomance";
 import PageScienceFiction from "./pages/CategoryGenre/PageScienceFiction/PageScienceFiction";
 import PageSeinen from "./pages/CategoryGenre/PageSeinen/PageSeinen";
@@ -104,6 +105,10 @@ const router = createBrowserRouter([
       {
         path: "/home/genre/tranche-de-vie",
         element: <PageTrancheDeVie />,
+      },
+      {
+        path: "/home/genre/music",
+        element: <PageMusic />,
       },
     ],
   },
