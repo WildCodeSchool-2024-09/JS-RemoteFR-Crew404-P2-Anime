@@ -5,99 +5,6 @@ export const dataPageComedy: SearchType[] = [
     images: {
       jpg: {
         large_image_url:
-          "https://cdn.myanimelist.net/images/anime/10/78745l.webp",
-      },
-    },
-
-    title: "My Hero Academia",
-    mal_id: 31964,
-
-    aired: {
-      prop: {
-        from: {
-          year: "2016",
-        },
-        to: {
-          year: "En cours",
-        },
-      },
-    },
-
-    genres: [
-      {
-        name: "Action",
-        mal_id: 1,
-      },
-    ],
-    synopsis: "",
-  },
-
-  {
-    images: {
-      jpg: {
-        large_image_url:
-          "https://cdn.myanimelist.net/images/anime/1271/109841l.jpg",
-      },
-    },
-
-    title: "Moi, quand je me réincarne en Slime",
-    mal_id: 39551,
-
-    aired: {
-      prop: {
-        from: {
-          year: "2018",
-        },
-        to: {
-          year: "En cours",
-        },
-      },
-    },
-
-    genres: [
-      {
-        name: "Action",
-        mal_id: 1,
-      },
-    ],
-    synopsis: "",
-  },
-
-  {
-    images: {
-      jpg: {
-        large_image_url:
-          "https://cdn.myanimelist.net/images/anime/1770/97704l.webp",
-      },
-    },
-
-    title: "One Piece",
-    mal_id: 459,
-
-    aired: {
-      prop: {
-        from: {
-          year: "1999",
-        },
-        to: {
-          year: "En cours",
-        },
-      },
-    },
-
-    genres: [
-      {
-        name: "Action",
-        mal_id: 1,
-      },
-    ],
-    synopsis: "",
-  },
-
-  {
-    images: {
-      jpg: {
-        large_image_url:
           "https://cdn.myanimelist.net/images/anime/5/18179l.webp",
       },
     },
@@ -118,8 +25,8 @@ export const dataPageComedy: SearchType[] = [
 
     genres: [
       {
-        name: "Action",
-        mal_id: 1,
+        name: "Comedy",
+        mal_id: 4,
       },
     ],
     synopsis: "",
@@ -129,48 +36,17 @@ export const dataPageComedy: SearchType[] = [
     images: {
       jpg: {
         large_image_url:
-          "https://cdn.myanimelist.net/images/anime/4/84177l.jpg",
+          "https://cdn.myanimelist.net/images/anime/1522/128039l.jpg",
       },
     },
 
-    title: "L'Attaque des Titans",
-    mal_id: 28755,
+    title: "Re:ZERO –Starting Life in Another World–",
+    mal_id: 31240,
 
     aired: {
       prop: {
         from: {
-          year: "2013",
-        },
-        to: {
-          year: "2023",
-        },
-      },
-    },
-
-    genres: [
-      {
-        name: "Action",
-        mal_id: 1,
-      },
-    ],
-    synopsis: "",
-  },
-
-  {
-    images: {
-      jpg: {
-        large_image_url:
-          "https://cdn.myanimelist.net/images/anime/1286/99889l.jpg",
-      },
-    },
-
-    title: "Demon Slayer",
-    mal_id: 38000,
-
-    aired: {
-      prop: {
-        from: {
-          year: "2020",
+          year: "2016",
         },
         to: {
           year: "En cours",
@@ -180,8 +56,8 @@ export const dataPageComedy: SearchType[] = [
 
     genres: [
       {
-        name: "Action",
-        mal_id: 1,
+        name: "Comedy",
+        mal_id: 4,
       },
     ],
     synopsis: "",
@@ -191,12 +67,12 @@ export const dataPageComedy: SearchType[] = [
     images: {
       jpg: {
         large_image_url:
-          "https://cdn.myanimelist.net/images/anime/1801/142390l.webp",
+          "https://cdn.myanimelist.net/images/anime/1825/142258l.jpg",
       },
     },
 
-    title: "Solo Leveling",
-    mal_id: 52299,
+    title: "Alya Sometimes Hides Her Feelings in Russian",
+    mal_id: 54744,
 
     aired: {
       prop: {
@@ -211,8 +87,8 @@ export const dataPageComedy: SearchType[] = [
 
     genres: [
       {
-        name: "Adventure",
-        mal_id: 1,
+        name: "Comedy",
+        mal_id: 4,
       },
     ],
     synopsis: "",
@@ -222,48 +98,17 @@ export const dataPageComedy: SearchType[] = [
     images: {
       jpg: {
         large_image_url:
-          "https://cdn.myanimelist.net/images/anime/11/39717l.webp",
+          "https://cdn.myanimelist.net/images/anime/1252/143457l.jpg",
       },
     },
 
-    title: "Sword Art Online",
-    mal_id: 11757,
+    title: "No Longer Allowed in Another World",
+    mal_id: 52367,
 
     aired: {
       prop: {
         from: {
-          year: "2012",
-        },
-        to: {
-          year: "2020",
-        },
-      },
-    },
-
-    genres: [
-      {
-        name: "Fantasy",
-        mal_id: 1,
-      },
-    ],
-    synopsis: "",
-  },
-
-  {
-    images: {
-      jpg: {
-        large_image_url:
-          "https://cdn.myanimelist.net/images/anime/1171/109222l.webp",
-      },
-    },
-
-    title: "Jujutsu Kaisen",
-    mal_id: 40748,
-
-    aired: {
-      prop: {
-        from: {
-          year: "2020",
+          year: "2024",
         },
         to: {
           year: "En cours",
@@ -273,8 +118,8 @@ export const dataPageComedy: SearchType[] = [
 
     genres: [
       {
-        name: "Action",
-        mal_id: 1,
+        name: "Comedy",
+        mal_id: 4,
       },
     ],
     synopsis: "",
@@ -284,28 +129,183 @@ export const dataPageComedy: SearchType[] = [
     images: {
       jpg: {
         large_image_url:
-          "https://cdn.myanimelist.net/images/anime/1565/111305l.jpg",
+          "https://cdn.myanimelist.net/images/anime/10/75195l.jpg",
       },
     },
 
-    title: "Naruto Shippuden",
-    mal_id: 1735,
+    title: "Blue Exorcist",
+    mal_id: 9919,
 
     aired: {
       prop: {
         from: {
-          year: "2007",
+          year: "2011",
         },
         to: {
-          year: "2017",
+          year: "En cours",
         },
       },
     },
 
     genres: [
       {
-        name: "Action",
-        mal_id: 1,
+        name: "Comedy",
+        mal_id: 4,
+      },
+    ],
+    synopsis: "",
+  },
+
+  {
+    images: {
+      jpg: {
+        large_image_url:
+          "https://cdn.myanimelist.net/images/anime/2/88336l.jpg",
+      },
+    },
+
+    title: "Black Clover",
+    mal_id: 34572,
+
+    aired: {
+      prop: {
+        from: {
+          year: "2017",
+        },
+        to: {
+          year: "2021",
+        },
+      },
+    },
+
+    genres: [
+      {
+        name: "Comedy",
+        mal_id: 4,
+      },
+    ],
+    synopsis: "",
+  },
+
+  {
+    images: {
+      jpg: {
+        large_image_url:
+          "https://cdn.myanimelist.net/images/anime/1895/142748l.jpg",
+      },
+    },
+
+    title: "KonoSuba: God's Blessing on This Wonderful World!",
+    mal_id: 30831,
+
+    aired: {
+      prop: {
+        from: {
+          year: "2016",
+        },
+        to: {
+          year: "En cours",
+        },
+      },
+    },
+
+    genres: [
+      {
+        name: "Comedy",
+        mal_id: 4,
+      },
+    ],
+    synopsis: "",
+  },
+
+  {
+    images: {
+      jpg: {
+        large_image_url:
+          "https://cdn.myanimelist.net/images/anime/1467/137783l.jpg",
+      },
+    },
+
+    title: "Black Butler",
+    mal_id: 4898,
+
+    aired: {
+      prop: {
+        from: {
+          year: "2008",
+        },
+        to: {
+          year: "En cours",
+        },
+      },
+    },
+
+    genres: [
+      {
+        name: "Comedy",
+        mal_id: 4,
+      },
+    ],
+    synopsis: "",
+  },
+
+  {
+    images: {
+      jpg: {
+        large_image_url:
+          "https://cdn.myanimelist.net/images/anime/13/44844l.jpg",
+      },
+    },
+
+    title: "Date A Live",
+    mal_id: 15583,
+
+    aired: {
+      prop: {
+        from: {
+          year: "2013",
+        },
+        to: {
+          year: "En cours",
+        },
+      },
+    },
+
+    genres: [
+      {
+        name: "Comedy",
+        mal_id: 4,
+      },
+    ],
+    synopsis: "",
+  },
+
+  {
+    images: {
+      jpg: {
+        large_image_url:
+          "https://cdn.myanimelist.net/images/anime/1301/93586l.jpg",
+      },
+    },
+
+    title: "Rascal Does Not Dream of Bunny Girl Senpai",
+    mal_id: 37450,
+
+    aired: {
+      prop: {
+        from: {
+          year: "2018",
+        },
+        to: {
+          year: "2024",
+        },
+      },
+    },
+
+    genres: [
+      {
+        name: "Comedy",
+        mal_id: 4,
       },
     ],
     synopsis: "",

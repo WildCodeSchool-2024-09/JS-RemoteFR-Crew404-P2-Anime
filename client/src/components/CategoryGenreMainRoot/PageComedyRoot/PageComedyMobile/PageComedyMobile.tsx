@@ -11,7 +11,7 @@ function PageComedyMobile() {
   const [count, setCount] = useState(1);
 
   const DataAnimeComedyMobileAPI = () => {
-    fetch(`https://api.jikan.moe/v4/anime?genres=1&page=${count}`)
+    fetch(`https://api.jikan.moe/v4/anime?genres=4&page=${count}`)
       .then((response) => response.json())
       .then((data) => {
         if (data?.data) {
@@ -46,7 +46,7 @@ function PageComedyMobile() {
               key={anime?.mal_id}
               src={anime.images?.jpg?.large_image_url}
               genre={
-                anime.genres?.find((g) => g.mal_id === 1)?.name || "Inconnu"
+                anime.genres?.find((g) => g.mal_id === 4)?.name || "Inconnu"
               }
               yearStart={anime.aired?.prop?.from?.year || "Inconnu"}
               yearEnd={anime.aired?.prop?.to?.year || "En cours"}
