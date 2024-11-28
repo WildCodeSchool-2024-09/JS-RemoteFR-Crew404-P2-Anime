@@ -20,17 +20,9 @@ import PageDrama from "./pages/CategoryGenre/PageDrama/PageDrama";
 import PageFantasy from "./pages/CategoryGenre/PageFantasy/PageFantasy";
 import PageRomance from "./pages/CategoryGenre/PageRomance/PageRomance";
 import PageScienceFiction from "./pages/CategoryGenre/PageScienceFiction/PageScienceFiction";
-
-// Import additional components for new routes
-// Try creating these components in the "pages" folder
-
-// import About from "./pages/About";
-// import Contact from "./pages/Contact";
+import PageSeinen from "./pages/CategoryGenre/PageSeinen/PageSeinen";
 
 /* ************************************************************************* */
-
-// Create router configuration with routes
-// You can add more routes as you build out your app!
 
 const router = createBrowserRouter([
   {
@@ -83,6 +75,10 @@ const router = createBrowserRouter([
       {
         path: "/home/genre/science-fiction",
         element: <PageScienceFiction />,
+      },
+      {
+        path: "/home/genre/seinen",
+        element: <PageSeinen />,
       },
     ],
   },
