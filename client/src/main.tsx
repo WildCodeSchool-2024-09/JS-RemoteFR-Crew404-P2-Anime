@@ -21,6 +21,7 @@ import PageFantasy from "./pages/CategoryGenre/PageFantasy/PageFantasy";
 import PageRomance from "./pages/CategoryGenre/PageRomance/PageRomance";
 import PageScienceFiction from "./pages/CategoryGenre/PageScienceFiction/PageScienceFiction";
 import PageSeinen from "./pages/CategoryGenre/PageSeinen/PageSeinen";
+import PageShounen from "./pages/CategoryGenre/PageShounen/PageShounen";
 
 /* ************************************************************************* */
 
@@ -79,6 +80,10 @@ const router = createBrowserRouter([
       {
         path: "/home/genre/seinen",
         element: <PageSeinen />,
+      },
+      {
+        path: "/home/genre/shounen",
+        element: <PageShounen />,
       },
     ],
   },

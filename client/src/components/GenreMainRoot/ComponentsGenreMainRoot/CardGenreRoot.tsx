@@ -24,7 +24,7 @@ function CardGenreRoot(props: CardGenreRootProps) {
 
       <Link to="/home/genre/seinen">Seinen</Link>
 
-      <Link to="/home/genre/shonen">Shônen</Link>
+      <Link to="/home/genre/shounen">Shônen</Link>
 
       <Link to="/home/genre/shojo">Shôjo</Link>
 
