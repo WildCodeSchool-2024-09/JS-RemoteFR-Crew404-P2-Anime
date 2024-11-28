@@ -18,6 +18,8 @@ function CardGenreRoot(props: CardGenreRootProps) {
 
       <Link to="/home/genre/fantasy">Fantastique</Link>
 
+      <Link to="/home/genre/music">Musique</Link>
+
       <Link to="/home/genre/romance">Romance</Link>
 
       <Link to="/home/genre/science-fiction">Science-Fiction</Link>
@@ -32,9 +34,7 @@ function CardGenreRoot(props: CardGenreRootProps) {
 
       <Link to="/home/genre/supernatural">Supernaturel</Link>
 
-      <Link to="/home/genre/tranche-de-Vie">Tranche-de-Vie</Link>
-
-      <Link to="/home/genre/thriller">Thriller</Link>
+      <Link to="/home/genre/tranche-de-vie">Tranche-de-Vie</Link>
     </div>
   );
 }

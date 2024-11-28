@@ -25,6 +25,7 @@ import PageShoujo from "./pages/CategoryGenre/PageShoujo/PageShoujo";
 import PageShounen from "./pages/CategoryGenre/PageShounen/PageShounen";
 import PageSports from "./pages/CategoryGenre/PageSports/PageSports";
 import PageSupernatural from "./pages/CategoryGenre/PageSupernatural/PageSupernatural";
+import PageTrancheDeVie from "./pages/CategoryGenre/PageTrancheDeVie/PageTrancheDeVie";
 
 /* ************************************************************************* */
 
@@ -99,6 +100,10 @@ const router = createBrowserRouter([
       {
         path: "/home/genre/supernatural",
         element: <PageSupernatural />,
+      },
+      {
+        path: "/home/genre/tranche-de-vie",
+        element: <PageTrancheDeVie />,
       },
     ],
   },
