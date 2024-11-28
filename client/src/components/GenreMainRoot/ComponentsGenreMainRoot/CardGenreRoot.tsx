@@ -18,8 +18,6 @@ function CardGenreRoot(props: CardGenreRootProps) {
 
       <Link to="/home/genre/fantasy">Fantastique</Link>
 
-      <Link to="/home/genre/musique">Musique</Link>
-
       <Link to="/home/genre/romance">Romance</Link>
 
       <Link to="/home/genre/science-fiction">Science-Fiction</Link>

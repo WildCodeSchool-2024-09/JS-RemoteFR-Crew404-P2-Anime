@@ -18,6 +18,7 @@ import PageAdventure from "./pages/CategoryGenre/PageAdventure/PageAdventure";
 import PageComedy from "./pages/CategoryGenre/PageComedy/PageComedy";
 import PageDrama from "./pages/CategoryGenre/PageDrama/PageDrama";
 import PageFantasy from "./pages/CategoryGenre/PageFantasy/PageFantasy";
+import PageRomance from "./pages/CategoryGenre/PageRomance/PageRomance";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -73,6 +74,10 @@ const router = createBrowserRouter([
       {
         path: "/home/genre/fantasy",
         element: <PageFantasy />,
+      },
+      {
+        path: "/home/genre/romance",
+        element: <PageRomance />,
       },
     ],
   },
