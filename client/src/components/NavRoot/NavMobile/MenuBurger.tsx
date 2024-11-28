@@ -13,9 +13,6 @@ function MenuBurger() {
       <li>
         <Link to="/genre">Genre</Link>
       </li>
-      <li>
-        <a href="!#">Année</a>
-      </li>
     </ul>
   );
 }

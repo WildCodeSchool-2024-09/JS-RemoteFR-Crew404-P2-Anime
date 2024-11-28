@@ -4,6 +4,7 @@
 .nav-desktop {
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   @media (max-width: 767px) {
     display: none;
@@ -12,8 +13,9 @@
 
 .ContainerPC-1 {
   display: grid;
-  grid-template-columns: 110px 120px 80px 90px 1fr 150px;
+  grid-template-columns: 110px 130px 60px 1fr 150px;
   gap: 5px;
+  width: 100%;
 }
 
 .Logo {
@@ -51,15 +53,11 @@
   background-color: var(--BackgroudButtonRoot);
 }
 
-.MenuPC > Link {
-  text-decoration: none;
-  color: var(--TextColorButtonRoot);
-  border-radius: 1rem;
-  padding: 5px;
-  background-color: var(--BackgroudButtonRoot);
+.MenuPC.Recommendation {
+  margin: 0px 0px 0px 5px;
 }
 
-.MenuPC.Recommendation {
+.MenuPC.Genre {
   margin: 0px 0px 0px 5px;
 }
 
@@ -67,6 +65,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 .ContainerPC-2 {
