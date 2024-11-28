@@ -5,28 +5,28 @@ export const dataPageSports: SearchType[] = [
     images: {
       jpg: {
         large_image_url:
-          "https://cdn.myanimelist.net/images/anime/1258/126929l.jpg",
+          "https://cdn.myanimelist.net/images/anime/10/75195l.jpg",
       },
     },
 
-    title: "Blue Lock",
-    mal_id: 49596,
+    title: "Blue Exorcist",
+    mal_id: 9919,
 
     aired: {
       prop: {
         from: {
-          year: "2022",
+          year: "2011",
         },
         to: {
-          year: "2023",
+          year: "2011",
         },
       },
     },
 
     genres: [
       {
-        name: "Sports",
-        mal_id: 30,
+        name: "Supernatural",
+        mal_id: 37,
       },
     ],
     synopsis: "",
@@ -36,12 +36,43 @@ export const dataPageSports: SearchType[] = [
     images: {
       jpg: {
         large_image_url:
-          "https://cdn.myanimelist.net/images/anime/7/76014l.jpg",
+          "https://cdn.myanimelist.net/images/anime/1171/109222l.webp",
       },
     },
 
-    title: "Haikyu!!",
-    mal_id: 20583,
+    title: "Jujutsu Kaisen",
+    mal_id: 40748,
+
+    aired: {
+      prop: {
+        from: {
+          year: "2020",
+        },
+        to: {
+          year: "En cours",
+        },
+      },
+    },
+
+    genres: [
+      {
+        name: "Supernatural",
+        mal_id: 37,
+      },
+    ],
+    synopsis: "",
+  },
+  /*---------------------------------------------------------------------------*/
+  {
+    images: {
+      jpg: {
+        large_image_url:
+          "https://cdn.myanimelist.net/images/anime/1498/134443l.jpg",
+      },
+    },
+
+    title: "Tokyo Ghoul",
+    mal_id: 22319,
 
     aired: {
       prop: {
@@ -49,128 +80,221 @@ export const dataPageSports: SearchType[] = [
           year: "2014",
         },
         to: {
-          year: "2014",
-        },
-      },
-    },
-
-    genres: [
-      {
-        name: "Sports",
-        mal_id: 30,
-      },
-    ],
-    synopsis: "",
-  },
-  /*---------------------------------------------------------------------------*/
-  {
-    images: {
-      jpg: {
-        large_image_url:
-          "https://cdn.myanimelist.net/images/anime/1549/119195l.jpg",
-      },
-    },
-
-    title: "SK8 the Infinity",
-    mal_id: 42923,
-
-    aired: {
-      prop: {
-        from: {
-          year: "2021",
-        },
-        to: {
-          year: "2021",
-        },
-      },
-    },
-
-    genres: [
-      {
-        name: "Sports",
-        mal_id: 30,
-      },
-    ],
-    synopsis: "",
-  },
-  /*---------------------------------------------------------------------------*/
-  {
-    images: {
-      jpg: {
-        large_image_url:
-          "https://cdn.myanimelist.net/images/anime/6/81149l.jpg",
-      },
-    },
-
-    title: "Yuri!!! on ICE",
-    mal_id: 32995,
-
-    aired: {
-      prop: {
-        from: {
-          year: "2016",
-        },
-        to: {
-          year: "2016",
-        },
-      },
-    },
-
-    genres: [
-      {
-        name: "Sports",
-        mal_id: 30,
-      },
-    ],
-    synopsis: "",
-  },
-  /*---------------------------------------------------------------------------*/
-  {
-    images: {
-      jpg: {
-        large_image_url:
-          "https://cdn.myanimelist.net/images/anime/6/51107l.jpg",
-      },
-    },
-
-    title: "Free!",
-    mal_id: 18507,
-
-    aired: {
-      prop: {
-        from: {
-          year: "2013",
-        },
-        to: {
-          year: "2013",
-        },
-      },
-    },
-
-    genres: [
-      {
-        name: "Sport",
-        mal_id: 30,
-      },
-    ],
-    synopsis: "",
-  },
-  /*---------------------------------------------------------------------------*/
-  {
-    images: {
-      jpg: {
-        large_image_url:
-          "https://cdn.myanimelist.net/images/anime/1936/129119l.jpg",
-      },
-    },
-
-    title: "Run with the Wind",
-    mal_id: 37965,
-
-    aired: {
-      prop: {
-        from: {
           year: "2018",
+        },
+      },
+    },
+
+    genres: [
+      {
+        name: "Supernatural",
+        mal_id: 37,
+      },
+    ],
+    synopsis: "",
+  },
+  /*---------------------------------------------------------------------------*/
+  {
+    images: {
+      jpg: {
+        large_image_url:
+          "https://cdn.myanimelist.net/images/anime/1286/99889l.jpg",
+      },
+    },
+
+    title: "Demon Slayer",
+    mal_id: 38000,
+
+    aired: {
+      prop: {
+        from: {
+          year: "2020",
+        },
+        to: {
+          year: "En cours",
+        },
+      },
+    },
+
+    genres: [
+      {
+        name: "Supernatural",
+        mal_id: 37,
+      },
+    ],
+    synopsis: "",
+  },
+  /*---------------------------------------------------------------------------*/
+  {
+    images: {
+      jpg: {
+        large_image_url:
+          "https://cdn.myanimelist.net/images/anime/8/80356l.jpg",
+      },
+    },
+
+    title: "Mob Psycho 100",
+    mal_id: 32182,
+
+    aired: {
+      prop: {
+        from: {
+          year: "2016",
+        },
+        to: {
+          year: "2016",
+        },
+      },
+    },
+
+    genres: [
+      {
+        name: "Supernartural",
+        mal_id: 37,
+      },
+    ],
+    synopsis: "",
+  },
+  /*---------------------------------------------------------------------------*/
+  {
+    images: {
+      jpg: {
+        large_image_url:
+          "https://cdn.myanimelist.net/images/anime/1522/128039l.jpg",
+      },
+    },
+
+    title: "Re:ZERO –Starting Life in Another World–",
+    mal_id: 31240,
+
+    aired: {
+      prop: {
+        from: {
+          year: "2016",
+        },
+        to: {
+          year: "En cours",
+        },
+      },
+    },
+
+    genres: [
+      {
+        name: "Adventure",
+        mal_id: 2,
+      },
+    ],
+    synopsis: "",
+  },
+  /*---------------------------------------------------------------------------*/
+  {
+    images: {
+      jpg: {
+        large_image_url:
+          "https://cdn.myanimelist.net/images/anime/10/75195l.jpg",
+      },
+    },
+
+    title: "Blue Exorcist",
+    mal_id: 9919,
+
+    aired: {
+      prop: {
+        from: {
+          year: "2011",
+        },
+        to: {
+          year: "En cours",
+        },
+      },
+    },
+
+    genres: [
+      {
+        name: "Adventure",
+        mal_id: 2,
+      },
+    ],
+    synopsis: "",
+  },
+  /*---------------------------------------------------------------------------*/
+  {
+    images: {
+      jpg: {
+        large_image_url:
+          "https://cdn.myanimelist.net/images/anime/11/39717l.webp",
+      },
+    },
+
+    title: "Sword Art Online",
+    mal_id: 11757,
+
+    aired: {
+      prop: {
+        from: {
+          year: "2012",
+        },
+        to: {
+          year: "2020",
+        },
+      },
+    },
+
+    genres: [
+      {
+        name: "Adventure",
+        mal_id: 2,
+      },
+    ],
+    synopsis: "",
+  },
+  /*---------------------------------------------------------------------------*/
+  {
+    images: {
+      jpg: {
+        large_image_url:
+          "https://cdn.myanimelist.net/images/anime/1277/142022l.jpg",
+      },
+    },
+
+    title: "Dragon Ball Z",
+    mal_id: 813,
+
+    aired: {
+      prop: {
+        from: {
+          year: "1989",
+        },
+        to: {
+          year: "En cours",
+        },
+      },
+    },
+
+    genres: [
+      {
+        name: "Adventure",
+        mal_id: 2,
+      },
+    ],
+    synopsis: "",
+  },
+
+  {
+    images: {
+      jpg: {
+        large_image_url:
+          "https://cdn.myanimelist.net/images/anime/5/18179l.webp",
+      },
+    },
+
+    title: "Fairy Tail",
+    mal_id: 6702,
+
+    aired: {
+      prop: {
+        from: {
+          year: "2009",
         },
         to: {
           year: "2019",
@@ -180,132 +304,8 @@ export const dataPageSports: SearchType[] = [
 
     genres: [
       {
-        name: "Sports",
-        mal_id: 30,
-      },
-    ],
-    synopsis: "",
-  },
-  /*---------------------------------------------------------------------------*/
-  {
-    images: {
-      jpg: {
-        large_image_url:
-          "https://cdn.myanimelist.net/images/anime/1827/113510l.jpg",
-      },
-    },
-
-    title: "Backflip!!",
-    mal_id: 43756,
-
-    aired: {
-      prop: {
-        from: {
-          year: "2021",
-        },
-        to: {
-          year: "2021",
-        },
-      },
-    },
-
-    genres: [
-      {
-        name: "Sports",
-        mal_id: 30,
-      },
-    ],
-    synopsis: "",
-  },
-  /*---------------------------------------------------------------------------*/
-  {
-    images: {
-      jpg: {
-        large_image_url:
-          "https://cdn.myanimelist.net/images/anime/1371/134464l.jpg",
-      },
-    },
-
-    title: "number24",
-    mal_id: 39583,
-
-    aired: {
-      prop: {
-        from: {
-          year: "2020",
-        },
-        to: {
-          year: "2020",
-        },
-      },
-    },
-
-    genres: [
-      {
-        name: "Sports",
-        mal_id: 30,
-      },
-    ],
-    synopsis: "",
-  },
-  /*---------------------------------------------------------------------------*/
-  {
-    images: {
-      jpg: {
-        large_image_url:
-          "https://cdn.myanimelist.net/images/anime/1249/132348l.jpg",
-      },
-    },
-
-    title: "MF GHOST",
-    mal_id: 50695,
-
-    aired: {
-      prop: {
-        from: {
-          year: "2023",
-        },
-        to: {
-          year: "2023",
-        },
-      },
-    },
-
-    genres: [
-      {
-        name: "Sports",
-        mal_id: 30,
-      },
-    ],
-    synopsis: "",
-  },
-  /*---------------------------------------------------------------------------*/
-  {
-    images: {
-      jpg: {
-        large_image_url:
-          "https://cdn.myanimelist.net/images/anime/1807/113870l.jpg",
-      },
-    },
-
-    title: "WAVE!! -Let's go surfing!!-",
-    mal_id: 46118,
-
-    aired: {
-      prop: {
-        from: {
-          year: "2020",
-        },
-        to: {
-          year: "2020",
-        },
-      },
-    },
-
-    genres: [
-      {
-        name: "Sports",
-        mal_id: 30,
+        name: "Adventure",
+        mal_id: 2,
       },
     ],
     synopsis: "",
