@@ -7,6 +7,7 @@
   border-radius: 1rem;
   background-color: var(--BackgroundColorRoot);
   margin: 1.5rem 0rem 0rem 1rem;
+  text-align: center;
 }
 
 .FooterRoot > h4 {

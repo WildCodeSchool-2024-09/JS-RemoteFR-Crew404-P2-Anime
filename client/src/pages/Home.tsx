@@ -1,6 +1,7 @@
 import FooterRoot from "../components/FooterRoot/FooterRoot";
 import HomeMainRoot from "../components/HomeMainRoot/HomeMainRoot";
 import NavRoot from "../components/NavRoot/NavRoot";
+import "./Home.css";
 
 function Home() {
   return (
@@ -9,7 +10,7 @@ function Home() {
         <NavRoot />
       </header>
 
-      <main>
+      <main className="MainHome">
         <HomeMainRoot />
       </main>
 

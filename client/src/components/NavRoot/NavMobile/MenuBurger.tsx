@@ -8,13 +8,10 @@ function MenuBurger() {
         <Link to="/home">Accueil</Link>
       </li>
       <li>
-        <a href="!#">Recommendation</a>
+        <Link to="/home/recommendation">Recommendation</Link>
       </li>
       <li>
         <Link to="/genre">Genre</Link>
-      </li>
-      <li>
-        <a href="!#">Année</a>
       </li>
     </ul>
   );

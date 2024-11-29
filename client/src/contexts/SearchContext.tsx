@@ -1,11 +1,14 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import type { SearchType } from "../datas/SearchType";
+import { dataPageAction } from "../datas/DataCategoryGenre/DataPageAction/dataPageAction";
+import type { SearchType } from "../datas/DataHome/SearchType";
 
 type SearchContextType = {
   search: string;
   setSearch: (e: string) => void;
   animeSearch: SearchType[];
   setAnimeSearch: (data: SearchType[]) => void;
+  dataAnimeAction: SearchType[];
+  setDataAnimeAction: (data: SearchType[]) => void;
 };
 
 type ChildrenType = {
@@ -17,6 +20,8 @@ const SearchContext = createContext<SearchContextType | null>(null);
 export function SearchProvider({ children }: ChildrenType) {
   const [search, setSearch] = useState<string>("");
   const [animeSearch, setAnimeSearch] = useState<SearchType[]>([]);
+  const [dataAnimeAction, setDataAnimeAction] =
+    useState<SearchType[]>(dataPageAction);
 
   useEffect(() => {
     if (search.trim() === "") {
@@ -38,7 +43,14 @@ export function SearchProvider({ children }: ChildrenType) {
 
   return (
     <SearchContext.Provider
-      value={{ search, setSearch, animeSearch, setAnimeSearch }}
+      value={{
+        search,
+        setSearch,
+        animeSearch,
+        setAnimeSearch,
+        dataAnimeAction,
+        setDataAnimeAction,
+      }}
     >
       {children}
     </SearchContext.Provider>

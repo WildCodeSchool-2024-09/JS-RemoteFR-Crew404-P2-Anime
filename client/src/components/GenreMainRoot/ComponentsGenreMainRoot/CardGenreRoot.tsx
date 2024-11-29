@@ -8,35 +8,33 @@ function CardGenreRoot(props: CardGenreRootProps) {
   const { moduleContainerCardGenreRoot } = props;
   return (
     <div className={moduleContainerCardGenreRoot}>
-      <Link to="/genre/action">Action</Link>
+      <Link to="/home/genre/action">Action</Link>
 
-      <Link to="/genre/aventure">Aventure</Link>
+      <Link to="/home/genre/adventure">Aventure</Link>
 
-      <Link to="/genre/comedie">Comédie</Link>
+      <Link to="/home/genre/comedy">Comédie</Link>
 
-      <Link to="/genre/drama">Drama</Link>
+      <Link to="/home/genre/drama">Drama</Link>
 
-      <Link to="/genre/fantastique">Fantastique</Link>
+      <Link to="/home/genre/fantasy">Fantastique</Link>
 
-      <Link to="/genre/musique">Musique</Link>
+      <Link to="/home/genre/music">Musique</Link>
 
-      <Link to="/genre/romance">Romance</Link>
+      <Link to="/home/genre/romance">Romance</Link>
 
-      <Link to="/genre/science-fiction">Science-Fiction</Link>
+      <Link to="/home/genre/science-fiction">Science-Fiction</Link>
 
-      <Link to="/genre/seinen">Seinen</Link>
+      <Link to="/home/genre/seinen">Seinen</Link>
 
-      <Link to="/genre/shonen">Shônen</Link>
+      <Link to="/home/genre/shounen">Shônen</Link>
 
-      <Link to="/genre/shojo">Shôjo</Link>
+      <Link to="/home/genre/shoujo">Shôjo</Link>
 
-      <Link to="/genre/sport">Sport</Link>
+      <Link to="/home/genre/sports">Sports</Link>
 
-      <Link to="/genre/supernatural">Supernatural</Link>
+      <Link to="/home/genre/supernatural">Supernaturel</Link>
 
-      <Link to="/genre/tranche-de-Vie">Tranche-de-Vie</Link>
-
-      <Link to="/genre/thriller">Thriller</Link>
+      <Link to="/home/genre/tranche-de-vie">Tranche-de-Vie</Link>
     </div>
   );
 }

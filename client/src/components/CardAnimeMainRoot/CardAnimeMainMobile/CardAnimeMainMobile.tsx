@@ -35,7 +35,7 @@ function CardAnimeMainMobile() {
 
   /*Si les données ne sont pas disponible, afficher un message d'attente*/
   if (!anime) {
-    return <p>Chargement...</p>;
+    return <p className="ChargementMobile">Chargement...</p>;
   }
 
   return (
@@ -43,10 +43,10 @@ function CardAnimeMainMobile() {
       <ComponentCardAnimeMainRoot
         title={anime.title || "Sans titre"}
         src={anime.images?.jpg?.large_image_url}
-        genre={anime.genres[0]?.name || "Inconnu"}
+        genre={anime.genres?.[0]?.name || "Inconnu"}
         yearStart={anime.aired?.prop?.from?.year || "Inconnu"}
         yearEnd={anime.aired?.prop?.to?.year || "En cours"}
-        synopsis={anime.synopsis}
+        synopsis={anime?.synopsis}
         // Données des classes liées au module CardAnimeHomeMainRoot.module.css
         moduleContainerCardAnime={style.ContainerCardAnimeMobile}
         moduleCardAnimeImg={style.CardAnimeImgMobile}

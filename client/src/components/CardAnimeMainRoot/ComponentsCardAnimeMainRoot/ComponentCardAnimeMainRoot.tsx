@@ -5,8 +5,8 @@ interface CardAnimeRootPros {
   title: string;
   yearStart: string;
   yearEnd: string;
-  genre: string;
-  synopsis: string;
+  genre: string | undefined;
+  synopsis: string | undefined;
 
   moduleContainerCardAnime: string;
   moduleCardAnimeImg: string;

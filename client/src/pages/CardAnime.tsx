@@ -1,6 +1,7 @@
 import CardAnimeMainRoot from "../components/CardAnimeMainRoot/CardAnimeMainRoot";
 import FooterRoot from "../components/FooterRoot/FooterRoot";
 import NavRoot from "../components/NavRoot/NavRoot";
+import "./CardAnime.css";
 
 function CardAnime() {
   return (
@@ -9,7 +10,7 @@ function CardAnime() {
         <NavRoot />
       </header>
 
-      <main>
+      <main className="MainCardAnime">
         <CardAnimeMainRoot />
       </main>
 

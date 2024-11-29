@@ -13,16 +13,23 @@ import Home from "./pages/Home";
 
 import CardAnime from "./pages/CardAnime";
 
-// Import additional components for new routes
-// Try creating these components in the "pages" folder
-
-// import About from "./pages/About";
-// import Contact from "./pages/Contact";
+import PageAction from "./pages/CategoryGenre/PageAction/PageAction";
+import PageAdventure from "./pages/CategoryGenre/PageAdventure/PageAdventure";
+import PageComedy from "./pages/CategoryGenre/PageComedy/PageComedy";
+import PageDrama from "./pages/CategoryGenre/PageDrama/PageDrama";
+import PageFantasy from "./pages/CategoryGenre/PageFantasy/PageFantasy";
+import PageMusic from "./pages/CategoryGenre/PageMusic/PageMusic";
+import PageRomance from "./pages/CategoryGenre/PageRomance/PageRomance";
+import PageScienceFiction from "./pages/CategoryGenre/PageScienceFiction/PageScienceFiction";
+import PageSeinen from "./pages/CategoryGenre/PageSeinen/PageSeinen";
+import PageShoujo from "./pages/CategoryGenre/PageShoujo/PageShoujo";
+import PageShounen from "./pages/CategoryGenre/PageShounen/PageShounen";
+import PageSports from "./pages/CategoryGenre/PageSports/PageSports";
+import PageSupernatural from "./pages/CategoryGenre/PageSupernatural/PageSupernatural";
+import PageTrancheDeVie from "./pages/CategoryGenre/PageTrancheDeVie/PageTrancheDeVie";
+import PageRecommendation from "./pages/PageRecommendation";
 
 /* ************************************************************************* */
-
-// Create router configuration with routes
-// You can add more routes as you build out your app!
 
 const router = createBrowserRouter([
   {
@@ -37,12 +44,76 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
+        path: "/home/genre",
+        element: <Genre />,
+      },
+      {
         path: "/genre",
         element: <Genre />,
       },
       {
         path: "/anime/data/:id",
         element: <CardAnime />,
+      },
+      {
+        path: "/home/recommendation",
+        element: <PageRecommendation />,
+      },
+      {
+        path: "/home/genre/action",
+        element: <PageAction />,
+      },
+      {
+        path: "/home/genre/adventure",
+        element: <PageAdventure />,
+      },
+      {
+        path: "/home/genre/comedy",
+        element: <PageComedy />,
+      },
+      {
+        path: "/home/genre/drama",
+        element: <PageDrama />,
+      },
+      {
+        path: "/home/genre/fantasy",
+        element: <PageFantasy />,
+      },
+      {
+        path: "/home/genre/romance",
+        element: <PageRomance />,
+      },
+      {
+        path: "/home/genre/science-fiction",
+        element: <PageScienceFiction />,
+      },
+      {
+        path: "/home/genre/seinen",
+        element: <PageSeinen />,
+      },
+      {
+        path: "/home/genre/shounen",
+        element: <PageShounen />,
+      },
+      {
+        path: "/home/genre/shoujo",
+        element: <PageShoujo />,
+      },
+      {
+        path: "/home/genre/sports",
+        element: <PageSports />,
+      },
+      {
+        path: "/home/genre/supernatural",
+        element: <PageSupernatural />,
+      },
+      {
+        path: "/home/genre/tranche-de-vie",
+        element: <PageTrancheDeVie />,
+      },
+      {
+        path: "/home/genre/music",
+        element: <PageMusic />,
       },
     ],
   },
