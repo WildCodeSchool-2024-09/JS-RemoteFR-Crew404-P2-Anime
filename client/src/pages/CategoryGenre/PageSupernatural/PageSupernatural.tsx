@@ -10,7 +10,7 @@ function PageSupernatural() {
         <NavRoot />
       </header>
 
-      <main className="MainPageAction">
+      <main className="MainPageSupernatural">
         <PageSupernaturalRoot />
       </main>
 

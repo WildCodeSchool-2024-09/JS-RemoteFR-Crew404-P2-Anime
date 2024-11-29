@@ -10,7 +10,7 @@ function PageRomance() {
         <NavRoot />
       </header>
 
-      <main className="MainPageAction">
+      <main className="MainPageRomance">
         <PageRomanceRoot />
       </main>
 

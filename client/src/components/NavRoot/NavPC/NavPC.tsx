@@ -18,7 +18,7 @@ function NavPC() {
         </div>
 
         <div className="MenuPC Recommendation">
-          <a href="!#">Recommendation</a>
+          <Link to="/home/recommendation">Recommendation</Link>
         </div>
         <div className="MenuPC Genre">
           <Link to="/genre">Genre</Link>

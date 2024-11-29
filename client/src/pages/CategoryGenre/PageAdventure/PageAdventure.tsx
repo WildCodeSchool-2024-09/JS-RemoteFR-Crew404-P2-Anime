@@ -10,7 +10,7 @@ function PageAdventure() {
         <NavRoot />
       </header>
 
-      <main className="MainPageAction">
+      <main className="MainPageAdventure">
         <PageAdventureRoot />
       </main>
 

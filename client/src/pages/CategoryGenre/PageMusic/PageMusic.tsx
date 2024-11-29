@@ -10,7 +10,7 @@ function PageMusic() {
         <NavRoot />
       </header>
 
-      <main className="MainPageAction">
+      <main className="MainPageMusic">
         <PageMusicRoot />
       </main>
 

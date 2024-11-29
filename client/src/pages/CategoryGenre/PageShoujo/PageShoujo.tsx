@@ -10,7 +10,7 @@ function PageShoujo() {
         <NavRoot />
       </header>
 
-      <main className="MainPageAction">
+      <main className="MainPageShoujo">
         <PageShoujoRoot />
       </main>
 

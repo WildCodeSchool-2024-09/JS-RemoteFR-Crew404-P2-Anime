@@ -10,7 +10,7 @@ function PageFantasy() {
         <NavRoot />
       </header>
 
-      <main className="MainPageAction">
+      <main className="MainPageFantasy">
         <PageFantasyRoot />
       </main>
 

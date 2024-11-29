@@ -10,7 +10,7 @@ function PageScienceFiction() {
         <NavRoot />
       </header>
 
-      <main className="MainPageAction">
+      <main className="MainPageFiction">
         <PageScienceFictionRoot />
       </main>
 

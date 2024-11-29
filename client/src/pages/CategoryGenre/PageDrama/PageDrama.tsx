@@ -10,7 +10,7 @@ function PageDrama() {
         <NavRoot />
       </header>
 
-      <main className="MainPageAction">
+      <main className="MainPageDrama">
         <PageDramaRoot />
       </main>
 

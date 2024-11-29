@@ -10,7 +10,7 @@ function PageTrancheDeVie() {
         <NavRoot />
       </header>
 
-      <main className="MainPageAction">
+      <main className="MainPageTrancheDeVie">
         <PageTrancheDeVieRoot />
       </main>
 

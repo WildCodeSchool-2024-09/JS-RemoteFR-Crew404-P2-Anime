@@ -27,6 +27,7 @@ import PageShounen from "./pages/CategoryGenre/PageShounen/PageShounen";
 import PageSports from "./pages/CategoryGenre/PageSports/PageSports";
 import PageSupernatural from "./pages/CategoryGenre/PageSupernatural/PageSupernatural";
 import PageTrancheDeVie from "./pages/CategoryGenre/PageTrancheDeVie/PageTrancheDeVie";
+import PageRecommendation from "./pages/PageRecommendation";
 
 /* ************************************************************************* */
 
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path: "/anime/data/:id",
         element: <CardAnime />,
+      },
+      {
+        path: "/home/recommendation",
+        element: <PageRecommendation />,
       },
       {
         path: "/home/genre/action",

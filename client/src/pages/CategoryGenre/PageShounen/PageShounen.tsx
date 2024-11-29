@@ -10,7 +10,7 @@ function PageShounen() {
         <NavRoot />
       </header>
 
-      <main className="MainPageAction">
+      <main className="MainPageShounen">
         <PageShounenRoot />
       </main>
 

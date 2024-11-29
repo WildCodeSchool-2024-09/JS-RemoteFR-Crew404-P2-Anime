@@ -10,7 +10,7 @@ function PageSeinen() {
         <NavRoot />
       </header>
 
-      <main className="MainPageAction">
+      <main className="MainPageSeinen">
         <PageSeinenRoot />
       </main>
 

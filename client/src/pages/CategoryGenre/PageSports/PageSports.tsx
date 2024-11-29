@@ -10,7 +10,7 @@ function PageSports() {
         <NavRoot />
       </header>
 
-      <main className="MainPageAction">
+      <main className="MainPageSports">
         <PageSportsRoot />
       </main>
 
