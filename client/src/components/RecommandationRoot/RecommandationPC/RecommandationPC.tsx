@@ -26,7 +26,7 @@ function RecommendationPC() {
       );
   };
 
-  const ButtonAnimeRecommendationPC = (nombreAppels = 1) => {
+  const ButtonAnimeRecommendationPC = (nombreAppels = 10) => {
     for (let i = 0; i < nombreAppels; i++) {
       DataAnimeRecommendationPCAPI();
     }
