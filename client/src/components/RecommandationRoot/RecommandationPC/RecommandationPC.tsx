@@ -5,6 +5,7 @@ import "./RecommandationPC.css";
 
 import { useState } from "react";
 import { dataPageRecommendation } from "../../../datas/DataHome/dataPageRecommendation";
+import DescriptionRecommendationRoot from "../DescriptionRecommendationRoot";
 
 function RecommendationPC() {
   const [dataAnimeRecommendation, setDataAnimeRecommendation] = useState(
@@ -33,6 +34,7 @@ function RecommendationPC() {
 
   return (
     <div className="PageRecommendationPC">
+      <DescriptionRecommendationRoot />
       <section className={style.ContainerRootCardAnimeHomePC}>
         {dataAnimeRecommendation.map((anime) => (
           <Link

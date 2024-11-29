@@ -5,6 +5,7 @@ import "./PageShoujoPC.css";
 
 import { useState } from "react";
 import { dataPageShoujo } from "../../../../datas/DataCategoryGenre/DataPageShoujo/dataPageShoujo";
+import DescriptionShoujoRoot from "../DescriptionShoujoRoot";
 
 function PageShoujoPC() {
   const [dataAnimeShoujo, setDataAnimeShoujo] = useState(dataPageShoujo);
@@ -35,6 +36,7 @@ function PageShoujoPC() {
 
   return (
     <div className="PageShoujoPC">
+      <DescriptionShoujoRoot />
       <section className={style.ContainerRootCardAnimeHomePC}>
         {dataAnimeShoujo.map((anime) => (
           <Link

@@ -5,6 +5,7 @@ import "./PageAdventureMobile.css";
 
 import { useState } from "react";
 import { dataPageAdventure } from "../../../../datas/DataCategoryGenre/DataPageAdventure/dataPageAdventure";
+import DescriptionAdventureRoot from "../DescriptionAdventureRoot";
 
 function PageAdventureMobile() {
   const [dataAnimeAdventure, setDataAnimeAdventure] =
@@ -36,6 +37,7 @@ function PageAdventureMobile() {
 
   return (
     <div className="PageAdventureMobile">
+      <DescriptionAdventureRoot />
       <section className={style.ContainerRootCardAnimeHomeMobile}>
         {dataAnimeAdventure.map((anime) => (
           <Link

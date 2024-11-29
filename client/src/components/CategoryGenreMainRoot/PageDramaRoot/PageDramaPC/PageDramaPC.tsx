@@ -5,6 +5,7 @@ import "./PageDramaPC.css";
 
 import { useState } from "react";
 import { dataPageDrama } from "../../../../datas/DataCategoryGenre/DataPageDrama/dataPageDrama";
+import DescriptionDramaRoot from "../DescriptionDramaRoot";
 
 function PageDramaPC() {
   const [dataAnimeDrama, setDataAnimeDrama] = useState(dataPageDrama);
@@ -35,6 +36,7 @@ function PageDramaPC() {
 
   return (
     <div className="PageDramaPC">
+      <DescriptionDramaRoot />
       <section className={style.ContainerRootCardAnimeHomePC}>
         {dataAnimeDrama.map((anime) => (
           <Link

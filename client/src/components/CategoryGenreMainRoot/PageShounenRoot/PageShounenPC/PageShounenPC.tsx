@@ -5,6 +5,7 @@ import "./PageShounenPC.css";
 
 import { useState } from "react";
 import { dataPageShounen } from "../../../../datas/DataCategoryGenre/DataPageShounen/dataPageShounen";
+import DescriptionShounenRoot from "../DescriptionShounenRoot";
 
 function PageShounenPC() {
   const [dataAnimeShounen, setDataAnimeShounen] = useState(dataPageShounen);
@@ -35,6 +36,7 @@ function PageShounenPC() {
 
   return (
     <div className="PageShounenPC">
+      <DescriptionShounenRoot />
       <section className={style.ContainerRootCardAnimeHomePC}>
         {dataAnimeShounen.map((anime) => (
           <Link

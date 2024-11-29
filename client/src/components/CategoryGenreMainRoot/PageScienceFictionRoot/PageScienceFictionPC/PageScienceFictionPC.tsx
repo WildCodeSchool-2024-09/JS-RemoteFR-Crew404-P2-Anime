@@ -5,6 +5,7 @@ import "./PageScienceFictionPC.css";
 
 import { useState } from "react";
 import { dataPageScienceFiction } from "../../../../datas/DataCategoryGenre/DataPageScienceFiction/dataPageScienceFiction";
+import DescriptionScienceFictionRoot from "../DescriptionScienceFictionRoot";
 
 function PageScienceFictionPC() {
   const [dataAnimeScienceFiction, setDataAnimeScienceFiction] = useState(
@@ -40,6 +41,7 @@ function PageScienceFictionPC() {
 
   return (
     <div className="PageScienceFictionPC">
+      <DescriptionScienceFictionRoot />
       <section className={style.ContainerRootCardAnimeHomePC}>
         {dataAnimeScienceFiction.map((anime) => (
           <Link

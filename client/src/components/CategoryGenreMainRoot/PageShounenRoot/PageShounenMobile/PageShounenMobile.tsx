@@ -5,6 +5,7 @@ import "./PageShounenMobile.css";
 
 import { useState } from "react";
 import { dataPageShounen } from "../../../../datas/DataCategoryGenre/DataPageShounen/dataPageShounen";
+import DescriptionShounenRoot from "../DescriptionShounenRoot";
 
 function PageShounenMobile() {
   const [dataAnimeShounen, setDataAnimeShounen] = useState(dataPageShounen);
@@ -35,6 +36,7 @@ function PageShounenMobile() {
 
   return (
     <div className="PageShounenMobile">
+      <DescriptionShounenRoot />
       <section className={style.ContainerRootCardAnimeHomeMobile}>
         {dataAnimeShounen.map((anime) => (
           <Link

@@ -5,6 +5,7 @@ import "./PageSportsPC.css";
 
 import { useState } from "react";
 import { dataPageSports } from "../../../../datas/DataCategoryGenre/DataPageSports/dataPageSports";
+import DescriptionSportsRoot from "../DescriptionSportsRoot";
 
 function PageSportsPC() {
   const [dataAnimeSports, setDataAnimeSports] = useState(dataPageSports);
@@ -35,6 +36,7 @@ function PageSportsPC() {
 
   return (
     <div className="PageSportsPC">
+      <DescriptionSportsRoot />
       <section className={style.ContainerRootCardAnimeHomePC}>
         {dataAnimeSports.map((anime) => (
           <Link

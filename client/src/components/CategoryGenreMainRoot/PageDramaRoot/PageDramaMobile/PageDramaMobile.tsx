@@ -5,6 +5,7 @@ import "./PageDramaMobile.css";
 
 import { useState } from "react";
 import { dataPageDrama } from "../../../../datas/DataCategoryGenre/DataPageDrama/dataPageDrama";
+import DescriptionDramaRoot from "../DescriptionDramaRoot";
 
 function PageDramaMobile() {
   const [dataAnimeDrama, setDataAnimeDrama] = useState(dataPageDrama);
@@ -35,6 +36,7 @@ function PageDramaMobile() {
 
   return (
     <div className="PageDramaMobile">
+      <DescriptionDramaRoot />
       <section className={style.ContainerRootCardAnimeHomeMobile}>
         {dataAnimeDrama.map((anime) => (
           <Link

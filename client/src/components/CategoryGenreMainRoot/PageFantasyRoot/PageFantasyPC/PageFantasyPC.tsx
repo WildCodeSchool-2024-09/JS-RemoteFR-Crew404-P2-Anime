@@ -5,6 +5,7 @@ import "./PageFantasyPC.css";
 
 import { useState } from "react";
 import { dataPageFantasy } from "../../../../datas/DataCategoryGenre/DataPageFantasy/dataPageFantasy";
+import DescriptionFantasyRoot from "../DescriptionFantasyRoot";
 
 function PageFantasyPC() {
   const [dataAnimeFantasy, setDataAnimeFantasy] = useState(dataPageFantasy);
@@ -35,6 +36,7 @@ function PageFantasyPC() {
 
   return (
     <div className="PageFantasyPC">
+      <DescriptionFantasyRoot />
       <section className={style.ContainerRootCardAnimeHomePC}>
         {dataAnimeFantasy.map((anime) => (
           <Link

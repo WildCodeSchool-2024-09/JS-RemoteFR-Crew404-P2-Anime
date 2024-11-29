@@ -5,6 +5,7 @@ import "./PageSupernaturalPC.css";
 
 import { useState } from "react";
 import { dataPageSupernatural } from "../../../../datas/DataCategoryGenre/DataPageSupernatural/dataPageSupernatural";
+import DescriptionSupernaturalRoot from "../DescriptionSupernaturalRoot";
 
 function PageSupernaturalPC() {
   const [dataAnimeSupernatural, setDataAnimeSupernatural] =
@@ -36,6 +37,7 @@ function PageSupernaturalPC() {
 
   return (
     <div className="PageSupernaturalPC">
+      <DescriptionSupernaturalRoot />
       <section className={style.ContainerRootCardAnimeHomePC}>
         {dataAnimeSupernatural.map((anime) => (
           <Link

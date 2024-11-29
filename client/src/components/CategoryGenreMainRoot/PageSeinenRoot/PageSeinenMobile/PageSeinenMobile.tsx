@@ -5,6 +5,7 @@ import "./PageSeinenMobile.css";
 
 import { useState } from "react";
 import { dataPageSeinen } from "../../../../datas/DataCategoryGenre/DataPageSeinen/dataPageSeinen";
+import DescriptionSeinenRoot from "../DescriptionSeinenRoot";
 
 function PageSeinenMobile() {
   const [dataAnimeSeinen, setDataAnimeSeinen] = useState(dataPageSeinen);
@@ -35,6 +36,7 @@ function PageSeinenMobile() {
 
   return (
     <div className="PageSeinenMobile">
+      <DescriptionSeinenRoot />
       <section className={style.ContainerRootCardAnimeHomeMobile}>
         {dataAnimeSeinen.map((anime) => (
           <Link

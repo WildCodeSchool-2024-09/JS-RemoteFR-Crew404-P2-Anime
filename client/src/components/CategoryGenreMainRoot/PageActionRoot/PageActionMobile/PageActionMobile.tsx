@@ -5,6 +5,7 @@ import "./PageActionMobile.css";
 
 import { useState } from "react";
 import { dataPageAction } from "../../../../datas/DataCategoryGenre/DataPageAction/dataPageAction";
+import DescriptionActionRoot from "../DescriptionActionRoot";
 
 function PageActionMobile() {
   const [dataAnimeAction, setDataAnimeAction] = useState(dataPageAction);
@@ -35,6 +36,7 @@ function PageActionMobile() {
 
   return (
     <div className="PageActionMobile">
+      <DescriptionActionRoot />
       <section className={style.ContainerRootCardAnimeHomeMobile}>
         {dataAnimeAction.map((anime) => (
           <Link

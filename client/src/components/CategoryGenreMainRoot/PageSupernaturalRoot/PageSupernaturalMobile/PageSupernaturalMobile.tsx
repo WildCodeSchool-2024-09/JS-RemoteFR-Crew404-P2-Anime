@@ -5,6 +5,7 @@ import "./PageSupernaturalMobile.css";
 
 import { useState } from "react";
 import { dataPageSupernatural } from "../../../../datas/DataCategoryGenre/DataPageSupernatural/dataPageSupernatural";
+import DescriptionSupernaturalRoot from "../DescriptionSupernaturalRoot";
 
 function PageSupernaturalMobile() {
   const [dataAnimeSupernatural, setDataAnimeSupernatural] =
@@ -36,6 +37,7 @@ function PageSupernaturalMobile() {
 
   return (
     <div className="PageSupernaturalMobile">
+      <DescriptionSupernaturalRoot />
       <section className={style.ContainerRootCardAnimeHomeMobile}>
         {dataAnimeSupernatural.map((anime) => (
           <Link

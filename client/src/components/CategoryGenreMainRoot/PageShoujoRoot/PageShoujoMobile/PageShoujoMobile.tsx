@@ -5,6 +5,7 @@ import "./PageShoujoMobile.css";
 
 import { useState } from "react";
 import { dataPageShoujo } from "../../../../datas/DataCategoryGenre/DataPageShoujo/dataPageShoujo";
+import DescriptionShoujoRoot from "../DescriptionShoujoRoot";
 
 function PageShoujoMobile() {
   const [dataAnimeShoujo, setDataAnimeShoujo] = useState(dataPageShoujo);
@@ -35,6 +36,7 @@ function PageShoujoMobile() {
 
   return (
     <div className="PageShoujoMobile">
+      <DescriptionShoujoRoot />
       <section className={style.ContainerRootCardAnimeHomeMobile}>
         {dataAnimeShoujo.map((anime) => (
           <Link

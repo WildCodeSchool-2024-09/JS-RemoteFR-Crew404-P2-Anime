@@ -5,6 +5,7 @@ import "./PageTrancheDeVieMobile.css";
 
 import { useState } from "react";
 import { dataPageTrancheDeVie } from "../../../../datas/DataCategoryGenre/DataPageTrancheDeVie/dataPageTrancheDeVie";
+import DescriptionTrancheDeVieRoot from "../DescriptionTrancheDeVieRoot";
 
 function PageTrancheDeVieMobile() {
   const [dataAnimeTrancheDeVie, setDataAnimeTrancheDeVie] =
@@ -36,6 +37,7 @@ function PageTrancheDeVieMobile() {
 
   return (
     <div className="PageTrancheDeVieMobile">
+      <DescriptionTrancheDeVieRoot />
       <section className={style.ContainerRootCardAnimeHomeMobile}>
         {dataAnimeTrancheDeVie.map((anime) => (
           <Link

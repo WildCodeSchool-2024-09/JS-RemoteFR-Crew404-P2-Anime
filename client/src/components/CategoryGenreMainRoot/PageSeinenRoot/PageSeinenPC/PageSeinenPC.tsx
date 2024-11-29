@@ -5,6 +5,7 @@ import "./PageSeinenPC.css";
 
 import { useState } from "react";
 import { dataPageSeinen } from "../../../../datas/DataCategoryGenre/DataPageSeinen/dataPageSeinen";
+import DescriptionSeinenRoot from "../DescriptionSeinenRoot";
 
 function PageSeinenPC() {
   const [dataAnimeSeinen, setDataAnimeSeinen] = useState(dataPageSeinen);
@@ -35,6 +36,7 @@ function PageSeinenPC() {
 
   return (
     <div className="PageSeinenPC">
+      <DescriptionSeinenRoot />
       <section className={style.ContainerRootCardAnimeHomePC}>
         {dataAnimeSeinen.map((anime) => (
           <Link

@@ -5,6 +5,7 @@ import "./PageAdventurePC.css";
 
 import { useState } from "react";
 import { dataPageAdventure } from "../../../../datas/DataCategoryGenre/DataPageAdventure/dataPageAdventure";
+import DescriptionAdventureRoot from "../DescriptionAdventureRoot";
 
 function PageAdventurePC() {
   const [dataAnimeAdventure, setDataAnimeAdventure] =
@@ -36,6 +37,7 @@ function PageAdventurePC() {
 
   return (
     <div className="PageAdventurePC">
+      <DescriptionAdventureRoot />
       <section className={style.ContainerRootCardAnimeHomePC}>
         {dataAnimeAdventure.map((anime) => (
           <Link

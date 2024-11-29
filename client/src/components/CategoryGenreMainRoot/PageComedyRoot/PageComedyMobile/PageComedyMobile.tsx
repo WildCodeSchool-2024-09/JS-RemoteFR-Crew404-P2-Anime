@@ -5,6 +5,7 @@ import "./PageComedyMobile.css";
 
 import { useState } from "react";
 import { dataPageComedy } from "../../../../datas/DataCategoryGenre/DataPageComedy/dataPageComedy";
+import DescriptionComedyRoot from "../DescriptionComedyRoot";
 
 function PageComedyMobile() {
   const [dataAnimeComedy, setDataAnimeComedy] = useState(dataPageComedy);
@@ -35,6 +36,7 @@ function PageComedyMobile() {
 
   return (
     <div className="PageComedyMobile">
+      <DescriptionComedyRoot />
       <section className={style.ContainerRootCardAnimeHomeMobile}>
         {dataAnimeComedy.map((anime) => (
           <Link

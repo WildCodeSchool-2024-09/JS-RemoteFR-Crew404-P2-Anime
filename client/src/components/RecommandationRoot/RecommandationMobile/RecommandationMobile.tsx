@@ -5,6 +5,7 @@ import "./RecommandationMobile.css";
 
 import { useState } from "react";
 import { dataPageRecommendation } from "../../../datas/DataHome/dataPageRecommendation";
+import DescriptionRecommendationRoot from "../DescriptionRecommendationRoot";
 
 function RecommendationMobile() {
   const [dataAnimeRecommendation, setDataAnimeRecommendation] = useState(
@@ -33,6 +34,7 @@ function RecommendationMobile() {
 
   return (
     <div className="PageRecommendationMobile">
+      <DescriptionRecommendationRoot />
       <section className={style.ContainerRootCardAnimeHomeMobile}>
         {dataAnimeRecommendation.map((anime) => (
           <Link

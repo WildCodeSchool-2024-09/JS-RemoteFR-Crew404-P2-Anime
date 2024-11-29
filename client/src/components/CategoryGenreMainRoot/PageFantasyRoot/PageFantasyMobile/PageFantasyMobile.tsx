@@ -5,6 +5,7 @@ import "./PageFantasyMobile.css";
 
 import { useState } from "react";
 import { dataPageFantasy } from "../../../../datas/DataCategoryGenre/DataPageFantasy/dataPageFantasy";
+import DescriptionFantasyRoot from "../DescriptionFantasyRoot";
 
 function PageFantasyMobile() {
   const [dataAnimeFantasy, setDataAnimeFantasy] = useState(dataPageFantasy);
@@ -35,6 +36,7 @@ function PageFantasyMobile() {
 
   return (
     <div className="PageFantasyMobile">
+      <DescriptionFantasyRoot />
       <section className={style.ContainerRootCardAnimeHomeMobile}>
         {dataAnimeFantasy.map((anime) => (
           <Link

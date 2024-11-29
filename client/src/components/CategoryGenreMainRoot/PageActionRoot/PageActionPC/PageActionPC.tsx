@@ -5,6 +5,7 @@ import "./PageActionPC.css";
 
 import { useState } from "react";
 import { dataPageAction } from "../../../../datas/DataCategoryGenre/DataPageAction/dataPageAction";
+import DescriptionActionRoot from "../DescriptionActionRoot";
 
 function PageActionPC() {
   const [dataAnimeAction, setDataAnimeAction] = useState(dataPageAction);
@@ -35,6 +36,7 @@ function PageActionPC() {
 
   return (
     <div className="PageActionPC">
+      <DescriptionActionRoot />
       <section className={style.ContainerRootCardAnimeHomePC}>
         {dataAnimeAction.map((anime) => (
           <Link

@@ -5,6 +5,7 @@ import "./PageMusicPC.css";
 
 import { useState } from "react";
 import { dataPageMusic } from "../../../../datas/DataCategoryGenre/DataPageMusic/dataPageMusic";
+import DescriptionMusicRoot from "../DescriptionMusicRoot";
 
 function PageMusicPC() {
   const [dataAnimeMusic, setDataAnimeMusic] = useState(dataPageMusic);
@@ -35,6 +36,7 @@ function PageMusicPC() {
 
   return (
     <div className="PageMusicPC">
+      <DescriptionMusicRoot />
       <section className={style.ContainerRootCardAnimeHomePC}>
         {dataAnimeMusic.map((anime) => (
           <Link

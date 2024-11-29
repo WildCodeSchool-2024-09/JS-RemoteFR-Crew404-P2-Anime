@@ -5,6 +5,7 @@ import "./PageSportsMobile.css";
 
 import { useState } from "react";
 import { dataPageSports } from "../../../../datas/DataCategoryGenre/DataPageSports/dataPageSports";
+import DescriptionSportsRoot from "../DescriptionSportsRoot";
 
 function PageSportsMobile() {
   const [dataAnimeSports, setDataAnimeSports] = useState(dataPageSports);
@@ -35,6 +36,7 @@ function PageSportsMobile() {
 
   return (
     <div className="PageSportsMobile">
+      <DescriptionSportsRoot />
       <section className={style.ContainerRootCardAnimeHomeMobile}>
         {dataAnimeSports.map((anime) => (
           <Link
