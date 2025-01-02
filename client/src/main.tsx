@@ -56,7 +56,7 @@ const router = createBrowserRouter([
         element: <CardAnime />,
       },
       {
-        path: "/home/recommendation",
+        path: "/home/recommandation",
         element: <PageRecommendation />,
       },
       {

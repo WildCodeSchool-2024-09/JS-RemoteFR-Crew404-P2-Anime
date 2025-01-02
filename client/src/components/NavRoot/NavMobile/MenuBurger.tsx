@@ -8,7 +8,7 @@ function MenuBurger() {
         <Link to="/home">Accueil</Link>
       </li>
       <li>
-        <Link to="/home/recommendation">Recommendation</Link>
+        <Link to="/home/recommandation">Recommandation</Link>
       </li>
       <li>
         <Link to="/genre">Genre</Link>
