@@ -26,7 +26,7 @@ function RecommendationMobile() {
       );
   };
 
-  const ButtonAnimeRecommendationMobile = (nombreAppels = 1) => {
+  const ButtonAnimeRecommendationMobile = (nombreAppels = 6) => {
     for (let i = 0; i < nombreAppels; i++) {
       DataAnimeRecommendationMobileAPI();
     }
